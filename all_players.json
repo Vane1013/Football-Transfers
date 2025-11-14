@@ -7,7 +7,7 @@
         "number": 10,
         "club": "Inter Miami",
         "country": "Argentina",
-        "price": "80",
+        "price": "100",
         "role": "forward",
         "img": "photos/messi.png"
     },
@@ -19,7 +19,7 @@
         "number": 7,
         "club": "Al-Nassr",
         "country": "Portugal",
-        "price": "80",
+        "price": "100",
         "role": "forward",
         "img": "photos/ronaldo.png"
     },
@@ -919,7 +919,7 @@
         "number": 93,
         "club": "Monterrey",
         "country": "Spain",
-        "price": "10",
+        "price": "75",
         "role": "defender",
         "img": "photos/ramos.png"
     },
@@ -1189,3 +1189,4 @@
     }
 
 ]
+
