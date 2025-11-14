@@ -7,7 +7,7 @@
         "number": 10,
         "club": "Inter Miami",
         "country": "Argentina",
-        "price": "70",
+        "price": "80",
         "role": "forward",
         "img": "photos/messi.png"
     },
@@ -19,7 +19,7 @@
         "number": 7,
         "club": "Al-Nassr",
         "country": "Portugal",
-        "price": "70",
+        "price": "80",
         "role": "forward",
         "img": "photos/ronaldo.png"
     },
@@ -187,7 +187,7 @@
         "number": 31,
         "club": "Fenerbahçe",
         "country": "Brazil",
-        "price": "45",
+        "price": "35",
         "role": "goalkeeper",
         "img": "photos/ederson.png"
     },
@@ -283,7 +283,7 @@
         "number": 4,
         "club": "Real Madrid",
         "country": "Austria",
-        "price": "40",
+        "price": "30",
         "role": "defender",
         "img": "photos/alaba.png"
     },
@@ -331,7 +331,7 @@
         "number": 7,
         "club": "Arsenal",
         "country": "England",
-        "price": "100",
+        "price": "85",
         "role": "forward",
         "img": "photos/saka.png"
     },
@@ -343,7 +343,7 @@
         "number": 47,
         "club": "Manchester City",
         "country": "England",
-        "price": "110",
+        "price": "90",
         "role": "midfielder",
         "img": "photos/foden.png"
     },
@@ -655,7 +655,7 @@
         "number": 15,
         "club": "Real Madrid",
         "country": "Turkey",
-        "price": "25",
+        "price": "30",
         "role": "midfielder",
         "img": "photos/guler.png"
     },
@@ -751,7 +751,7 @@
         "number": 79,
         "club": "Al-Nassr",
         "country": "Portugal",
-        "price": "50",
+        "price": "45",
         "role": "midfielder",
         "img": "photos/felix.png"
     },
@@ -859,7 +859,7 @@
         "number": 1,
         "club": "Inter Milan",
         "country": "Switzerland",
-        "price": "4",
+        "price": "14",
         "role": "goalkeeper",
         "img": "photos/sommer.png"
     },
@@ -883,7 +883,7 @@
         "number": 9,
         "club": "Al-Ittihad",
         "country": "France",
-        "price": "15",
+        "price": "20",
         "role": "forward",
         "img": "photos/benzema.png"
     },
@@ -907,7 +907,7 @@
         "number": 9,
         "club": "Inter Miami",
         "country": "Uruguay",
-        "price": "5",
+        "price": "15",
         "role": "forward",
         "img": "photos/suarez.png"
     },
@@ -979,7 +979,7 @@
         "number": 99,
         "club": "Porto",
         "country": "Portugal",
-        "price": "45",
+        "price": "40",
         "role": "goalkeeper",
         "img": "photos/costa.png"
     },
@@ -1087,7 +1087,7 @@
         "number": 11,
         "club": "Barcelona",
         "country": "Brazil",
-        "price": "85",
+        "price": "110",
         "role": "forward",
         "img": "photos/raphinha.png"
     },
@@ -1187,4 +1187,5 @@
         "role": "defender",
         "img": "photos/maguire.png"
     }
+
 ]
