@@ -7,8 +7,9 @@
         "number": 10,
         "club": "AC Milan",
         "country": "Croatia",
-        "price": "20",
+        "price": "50",
         "role": "midfielder",
         "img": "photos/modric.png"
     }
+
 ]
