@@ -43,7 +43,7 @@
         "number": 10,
         "club": "Santos",
         "country": "Brazil",
-        "price": "30",
+        "price": "70",
         "role": "forward",
         "img": "photos/neymar.png"
     },
@@ -1189,5 +1189,6 @@
     }
 
 ]
+
 
 
