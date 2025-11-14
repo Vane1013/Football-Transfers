@@ -2,14 +2,14 @@
 const managers = {
     'Vanya': {
         name: 'Vanya',
-        email: 'vanya@realmadrid.com',
+        email: 'vanya@football.com',
         license: 'FIFA-AGENT-001',
         budget: 0,
         welcomeShown: false  // Флаг для отслеживания показа приветствия
     },
     'Serega': {
         name: 'Serega', 
-        email: 'serega@realmadrid.com',
+        email: 'serega@football.com',
         license: 'FIFA-AGENT-002',
         budget: 0,
         welcomeShown: false  // Флаг для отслеживания показа приветствия
@@ -249,3 +249,4 @@ function closeSuccessMessage() {
     document.getElementById('successMessage').style.display = 'none';
     window.location.href = 'all_players.html';
 }
+
