@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fortune Wheel</title>
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" rel="stylesheet">
+    <style>
+        /* Isolated styles for fortune wheel only */
+        #fortune-wheel-wrapper {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #fortune-wheel-wrapper * {
+            box-sizing: border-box;
+        }
+
+        #fortune-wheel-container {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        #fortune-wheel-container .fw-main-container {
+            text-align: center;
+            width: 100%;
+            max-width: 800px;
+        }
+
+        #fortune-wheel-container .fw-title {
+            color: white;
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        #fortune-wheel-container .fw-subtitle {
+            color: #e0e0e0;
+            margin-bottom: 40px;
+            font-size: 1.2em;
+        }
+
+        #fortune-wheel-container .fw-wheel-container {
+            position: relative;
+            margin: 60px auto 40px;
+        }
+
+        #fortune-wheel-container .fw-arrow {
+            width: 0;
+            height: 0;
+            border-left: 20px solid transparent;
+            border-right: 20px solid transparent;
+            border-top: 40px solid #ff4444;
+            position: absolute;
+            top: -50px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 10;
+            filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+        }
+
+        #fortune-wheel-container #wheel {
+            transition: transform 15s cubic-bezier(0.17, 0.67, 0.12, 0.99);
+            max-width: 100%;
+            height: auto;
+        }
+
+        #fortune-wheel-container .fw-spin-button {
+            background: linear-gradient(135deg, #ffd700 0%, #ff8c00 100%);
+            color: white;
+            border: none;
+            padding: 20px 50px;
+            font-size: 1.5em;
+            font-weight: bold;
+            border-radius: 50px;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s;
+            margin-bottom: 20px;
+        }
+
+        #fortune-wheel-container .fw-spin-button:hover:not(:disabled) {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        #fortune-wheel-container .fw-spin-button:disabled {
+            background: #999;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        #fortune-wheel-container .fw-result {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin-top: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            animation: fw-bounce 0.5s;
+        }
+
+        @keyframes fw-bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        #fortune-wheel-container .fw-result h2 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+
+        #fortune-wheel-container .fw-result p {
+            color: #ff8c00;
+            font-size: 2em;
+            font-weight: bold;
+        }
+
+        #fortune-wheel-container .fw-controls,
+        #fortune-wheel-container .fw-history,
+        #fortune-wheel-container .fw-stats {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 15px;
+            margin: 40px auto 0;
+            max-width: 600px;
+            width: 100%;
+        }
+
+        #fortune-wheel-container .fw-controls h3,
+        #fortune-wheel-container .fw-history h3,
+        #fortune-wheel-container .fw-stats h3 {
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        #fortune-wheel-container .fw-prizes-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 600px) {
+            #fortune-wheel-container .fw-prizes-list {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        #fortune-wheel-container .fw-prize-item {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 10px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #fortune-wheel-container .fw-prize-item span {
+            color: white;
+        }
+
+        #fortune-wheel-container .fw-remove-btn {
+            background: #ff4444;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 3px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        #fortune-wheel-container .fw-remove-btn:hover {
+            background: #cc0000;
+        }
+
+        #fortune-wheel-container .fw-add-btn {
+            width: 100%;
+            background: #4CAF50;
+            color: white;
+            border: none;
+            padding: 15px;
+            border-radius: 5px;
+            font-size: 1em;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        #fortune-wheel-container .fw-add-btn:hover {
+            background: #45a049;
+        }
+
+        #fortune-wheel-container .fw-history-list {
+            max-height: 300px;
+            overflow-y: auto;
+        }
+
+        #fortune-wheel-container .fw-history-item {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #fortune-wheel-container .fw-history-item .fw-time {
+            font-size: 0.8em;
+            color: #e0e0e0;
+        }
+
+        #fortune-wheel-container .fw-clear-history-btn {
+            width: 100%;
+            background: #ff6b6b;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        #fortune-wheel-container .fw-clear-history-btn:hover {
+            background: #ff5252;
+        }
+
+        #fortune-wheel-container .fw-loading {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 9999;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: white;
+            font-size: 1.5em;
+        }
+
+        #fortune-wheel-container .fw-spinner {
+            border: 5px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            border-top: 5px solid #fff;
+            width: 50px;
+            height: 50px;
+            animation: fw-spin 1s linear infinite;
+            margin-bottom: 20px;
+        }
+
+        @keyframes fw-spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        #fortune-wheel-container .fw-stats {
+            color: white;
+            text-align: left;
+            padding: 20px;
+        }
+
+        #fortune-wheel-container .fw-stats h3 {
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        #fortune-wheel-container .fw-stats-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        @keyframes fw-firework {
+            0% {
+                opacity: 1;
+                transform: scale(0) rotate(0deg);
+            }
+            100% {
+                opacity: 0;
+                transform: scale(2) rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="fortune-wheel-wrapper">
+        <header class="card card-header"
+            style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(grass.jpg);">
+            <div class="card-body">
+                <h3 class="card-title text-center" style="color: black; 
+                       text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;">
+                    Football Transfers.<br><br>Study well and create your own team!
+                </h3>
+            </div>
+        </header>
+
+        <div class="card">
+            <div class="card-body">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item"> <a class="nav-link" href="./index.html">The Rules and Exchange Rate</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="./all_players.html">Transfermarkt</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="./Vanya.html">Vanya's Players</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="./Serega.html">Serega's Players</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="./manager.html">The Manager's Players</a></li>
+                    <li class="nav-item"> <a class="nav-link active" href="./wheel.html">Fortune Wheel</a></li>
+                </ul>
+            </div>
+
+            <div id="fortune-wheel-container">
+                <div class="fw-loading" id="loading">
+                    <div class="fw-spinner"></div>
+                    <p>Loading...</p>
+                </div>
+
+                <div class="fw-main-container">
+                    <h1 class="fw-title">🎡 The Wheel of Fortune 🎡</h1>
+                    <p class="fw-subtitle">Earn more prizes or nothing!</p>
+
+                    <div class="fw-wheel-container">
+                        <div class="fw-arrow"></div>
+                        <svg id="wheel" width="400" height="400" viewBox="0 0 400 400"></svg>
+                    </div>
+
+                    <button class="fw-spin-button" id="spinBtn">SPIN!</button>
+
+                    <div id="result" class="fw-result" style="display: none;"></div>
+
+                    <div class="fw-stats">
+                        <h3>📊 Statistics</h3>
+                        <div class="fw-stats-item">
+                            <span>Total spins:</span>
+                            <span id="totalSpins">0</span>
+                        </div>
+                        <div class="fw-stats-item">
+                            <span>Successful spins:</span>
+                            <span id="successfulSpins">0</span>
+                        </div>
+                        <div class="fw-stats-item">
+                            <span>Luck percentage:</span>
+                            <span id="luckPercentage">0%</span>
+                        </div>
+                    </div>
+
+                    <div class="fw-controls">
+                        <h3>Prize Management</h3>
+                        <div class="fw-prizes-list" id="prizesList"></div>
+                        <button class="fw-add-btn" id="addBtn">+ Add Prize</button>
+                    </div>
+
+                    <div class="fw-history">
+                        <h3>📜 Spin History</h3>
+                        <div class="fw-history-list" id="historyList"></div>
+                        <button class="fw-clear-history-btn" id="clearHistoryBtn">🗑️ Clear History</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let prizes = [
+            '⭐ 1 star', '⭐ 2 stars', '⭐ 3 stars', '⭐ 4 stars',
+            '⭐ 5 stars', '⭐ 10 stars', '⚽ Footballer (20⭐)',
+            '❌ Miss', '🔄 Restart'
+        ];
+
+        const colors = ['#FFD700', '#FFA500', '#FF8C00', '#FF6347',
+            '#FF4500', '#DC143C', '#4169E1', '#808080', '#32CD32'];
+
+        let rotation = 0;
+        let spinning = false;
+        let spinHistory = [];
+        let totalSpins = 0;
+        let successfulSpins = 0;
+
+        // SOUNDS:
+        let customSounds = {
+            footballer: 'footballer.mp3',
+            sad: 'empty.mp3',
+            drum: 'star.mp3',
+            spin: 'spin.mp3'
+        };
+
+        function loadFromStorage() {
+            // Версия призов - если изменилась, сбрасываем старые данные
+            const PRIZE_VERSION = 'v2_english';
+            const savedVersion = localStorage.getItem('wheelPrizeVersion');
+            
+            // Если версия не совпадает, очищаем старые данные
+            if (savedVersion !== PRIZE_VERSION) {
+                localStorage.removeItem('wheelPrizes');
+                localStorage.setItem('wheelPrizeVersion', PRIZE_VERSION);
+            }
+            
+            const savedPrizes = localStorage.getItem('wheelPrizes');
+            const savedHistory = localStorage.getItem('wheelHistory');
+            const savedStats = localStorage.getItem('wheelStats');
+            if (savedPrizes) prizes = JSON.parse(savedPrizes);
+            if (savedHistory) spinHistory = JSON.parse(savedHistory);
+            if (savedStats) {
+                const stats = JSON.parse(savedStats);
+                totalSpins = stats.totalSpins || 0;
+                successfulSpins = stats.successfulSpins || 0;
+            }
+            updateStatsDisplay();
+        }
+
+        function saveToStorage() {
+            localStorage.setItem('wheelPrizes', JSON.stringify(prizes));
+            localStorage.setItem('wheelHistory', JSON.stringify(spinHistory));
+            localStorage.setItem('wheelStats', JSON.stringify({ totalSpins, successfulSpins }));
+        }
+
+        function updateStatsDisplay() {
+            document.getElementById('totalSpins').textContent = totalSpins;
+            document.getElementById('successfulSpins').textContent = successfulSpins;
+            const luckPercentage = totalSpins > 0 ? Math.round((successfulSpins / totalSpins) * 100) : 0;
+            document.getElementById('luckPercentage').textContent = `${luckPercentage}%`;
+        }
+
+        function showLoading() { document.getElementById('loading').style.display = 'flex'; }
+        function hideLoading() { document.getElementById('loading').style.display = 'none'; }
+
+        function drawWheel() {
+            const wheel = document.getElementById('wheel');
+            wheel.innerHTML = '';
+            const ns = 'http://www.w3.org/2000/svg';
+
+            const circle = document.createElementNS(ns, 'circle');
+            circle.setAttribute('cx', '200');
+            circle.setAttribute('cy', '200');
+            circle.setAttribute('r', '190');
+            circle.setAttribute('fill', '#1a1a2e');
+            circle.setAttribute('stroke', '#fff');
+            circle.setAttribute('stroke-width', '4');
+            wheel.appendChild(circle);
+
+            prizes.forEach((prize, index) => {
+                const angle = (360 / prizes.length) * index;
+                const nextAngle = (360 / prizes.length) * (index + 1);
+                const startAngle = (angle - 90) * (Math.PI / 180);
+                const endAngle = (nextAngle - 90) * (Math.PI / 180);
+                const x1 = 200 + 190 * Math.cos(startAngle);
+                const y1 = 200 + 190 * Math.sin(startAngle);
+                const x2 = 200 + 190 * Math.cos(endAngle);
+                const y2 = 200 + 190 * Math.sin(endAngle);
+                const largeArc = (nextAngle - angle) > 180 ? 1 : 0;
+
+                const path = document.createElementNS(ns, 'path');
+                path.setAttribute('d', `M 200 200 L ${x1} ${y1} A 190 190 0 ${largeArc} 1 ${x2} ${y2} Z`);
+                path.setAttribute('fill', colors[index % colors.length]);
+                path.setAttribute('stroke', '#fff');
+                path.setAttribute('stroke-width', '2');
+                wheel.appendChild(path);
+
+                const textAngle = angle + (360 / prizes.length) / 2;
+                const textRadius = 130;
+                const textX = 200 + textRadius * Math.cos((textAngle - 90) * Math.PI / 180);
+                const textY = 200 + textRadius * Math.sin((textAngle - 90) * Math.PI / 180);
+
+                const text = document.createElementNS(ns, 'text');
+                text.setAttribute('x', textX);
+                text.setAttribute('y', textY);
+                text.setAttribute('fill', 'white');
+                text.setAttribute('font-size', prizes.length > 8 ? '12' : '16');
+                text.setAttribute('font-weight', 'bold');
+                text.setAttribute('text-anchor', 'middle');
+                text.setAttribute('dominant-baseline', 'middle');
+                text.setAttribute('transform', `rotate(${textAngle + 90}, ${textX}, ${textY})`);
+                text.textContent = prize;
+                wheel.appendChild(text);
+            });
+
+            const centerCircle1 = document.createElementNS(ns, 'circle');
+            centerCircle1.setAttribute('cx', '200');
+            centerCircle1.setAttribute('cy', '200');
+            centerCircle1.setAttribute('r', '20');
+            centerCircle1.setAttribute('fill', '#fff');
+            wheel.appendChild(centerCircle1);
+
+            const centerCircle2 = document.createElementNS(ns, 'circle');
+            centerCircle2.setAttribute('cx', '200');
+            centerCircle2.setAttribute('cy', '200');
+            centerCircle2.setAttribute('r', '10');
+            centerCircle2.setAttribute('fill', '#1a1a2e');
+            wheel.appendChild(centerCircle2);
+        }
+
+        function updatePrizesList() {
+            const list = document.getElementById('prizesList');
+            list.innerHTML = '';
+            prizes.forEach((prize, index) => {
+                const item = document.createElement('div');
+                item.className = 'fw-prize-item';
+                const span = document.createElement('span');
+                span.textContent = prize;
+                const btn = document.createElement('button');
+                btn.className = 'fw-remove-btn';
+                btn.textContent = '✕';
+                btn.onclick = () => removePrize(index);
+                item.appendChild(span);
+                item.appendChild(btn);
+                list.appendChild(item);
+            });
+        }
+
+        function spinWheel() {
+            if (spinning) return;
+            spinning = true;
+            totalSpins++;
+            updateStatsDisplay();
+            document.getElementById('spinBtn').disabled = true;
+            document.getElementById('result').style.display = 'none';
+
+            playSpinSound();
+
+            const spins = 15 + Math.random() * 10;
+            const degrees = spins * 360;
+            const extraDegrees = Math.random() * 360;
+            const totalRotation = rotation + degrees + extraDegrees;
+            rotation = totalRotation;
+            document.getElementById('wheel').style.transform = `rotate(${totalRotation}deg)`;
+
+            setTimeout(() => {
+                const normalizedRotation = totalRotation % 360;
+                const segmentAngle = 360 / prizes.length;
+                const adjustedRotation = (360 - normalizedRotation) % 360;
+                const selectedIndex = Math.floor(adjustedRotation / segmentAngle) % prizes.length;
+                const resultDiv = document.getElementById('result');
+                const selectedPrize = prizes[selectedIndex];
+
+                if (!selectedPrize.includes('Restart')) {
+                    addToHistory(selectedPrize);
+                    if (!selectedPrize.includes('Miss')) {
+                        successfulSpins++;
+                        updateStatsDisplay();
+                    }
+                }
+
+                if (selectedPrize.includes('Restart')) {
+                    resultDiv.innerHTML = `<h2 style="color: #32CD32;">🔄 Restart!</h2><p style="color: #32CD32;">Spinning again!</p>`;
+                    resultDiv.style.display = 'block';
+                    setTimeout(() => {
+                        resultDiv.style.display = 'none';
+                        spinWheel();
+                    }, 2000);
+                } else if (selectedPrize.includes('Footballer')) {
+                    createFireworks();
+                    playFootballerMusic();
+                    resultDiv.innerHTML = `<h2 style="color: #4169E1;">🎉 CONGRATULATIONS! 🎉</h2><p style="font-size: 2.5em;">${selectedPrize}</p>`;
+                    resultDiv.style.display = 'block';
+                    spinning = false;
+                    document.getElementById('spinBtn').disabled = false;
+                } else if (selectedPrize.includes('Miss')) {
+                    playSadSound();
+                    resultDiv.innerHTML = `<h2 style="color: #808080;">😢 Miss!</h2><p style="color: #808080; font-size: 3em;">😞</p><p style="color: #808080;">Try again!</p>`;
+                    resultDiv.style.display = 'block';
+                    spinning = false;
+                    document.getElementById('spinBtn').disabled = false;
+                } else {
+                    playDrumSound();
+                    resultDiv.innerHTML = `<h2>Result:</h2><p>${selectedPrize}</p>`;
+                    resultDiv.style.display = 'block';
+                    spinning = false;
+                    document.getElementById('spinBtn').disabled = false;
+                }
+                saveToStorage();
+            }, 15000);
+        }
+
+        function addPrize() {
+            const newPrize = prompt('Enter prize name:');
+            if (newPrize && newPrize.trim()) {
+                prizes.push(newPrize.trim());
+                drawWheel();
+                updatePrizesList();
+                saveToStorage();
+            }
+        }
+
+        function removePrize(index) {
+            if (prizes.length > 2) {
+                prizes.splice(index, 1);
+                drawWheel();
+                updatePrizesList();
+                saveToStorage();
+            } else {
+                alert('There must be at least 2 prizes!');
+            }
+        }
+
+        function createFireworks() {
+            const container = document.createElement('div');
+            container.style.cssText = 'position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:9999';
+            document.body.appendChild(container);
+
+            for (let i = 0; i < 50; i++) {
+                setTimeout(() => {
+                    const firework = document.createElement('div');
+                    firework.innerHTML = '🎆';
+                    firework.style.cssText = `position:absolute;font-size:${Math.random() * 30 + 20}px;left:${Math.random() * 100}%;top:${Math.random() * 100}%;animation:fw-firework 1s ease-out forwards`;
+                    container.appendChild(firework);
+                    setTimeout(() => firework.remove(), 1000);
+                }, i * 50);
+            }
+            setTimeout(() => container.remove(), 3000);
+        }
+
+        // SOUND FUNCTIONS
+        function playSpinSound() {
+            const audio = new Audio(customSounds.spin);
+            audio.volume = 0.5;
+            audio.play();
+        }
+
+        function playSadSound() {
+            const audio = new Audio(customSounds.sad);
+            audio.volume = 0.5;
+            audio.play();
+        }
+
+        function playDrumSound() {
+            const audio = new Audio(customSounds.drum);
+            audio.volume = 0.5;
+            audio.play();
+        }
+
+        function playFootballerMusic() {
+            const audio = new Audio(customSounds.footballer);
+            audio.volume = 0.5;
+            audio.play();
+        }
+
+        function addToHistory(prize) {
+            const now = new Date();
+            const timeString = now.toLocaleTimeString('en-US');
+            spinHistory.unshift({ prize: prize, time: timeString });
+            if (spinHistory.length > 20) {
+                spinHistory.pop();
+            }
+            updateHistoryDisplay();
+        }
+
+        function updateHistoryDisplay() {
+            const historyList = document.getElementById('historyList');
+            if (spinHistory.length === 0) {
+                historyList.innerHTML = '<p style="color: #e0e0e0; text-align: center;">History is empty</p>';
+                return;
+            }
+            historyList.innerHTML = spinHistory.map(item => `
+            <div class="fw-history-item">
+                <span>${item.prize}</span>
+                <span class="fw-time">${item.time}</span>
+            </div>
+        `).join('');
+        }
+
+        function clearHistory() {
+            if (confirm('Clear all spin history?')) {
+                spinHistory = [];
+                updateHistoryDisplay();
+                saveToStorage();
+            }
+        }
+
+        // Initialize on page load
+        document.addEventListener('DOMContentLoaded', function () {
+            loadFromStorage();
+            document.getElementById('spinBtn').addEventListener('click', spinWheel);
+            document.getElementById('addBtn').addEventListener('click', addPrize);
+            document.getElementById('clearHistoryBtn').addEventListener('click', clearHistory);
+            drawWheel();
+            updatePrizesList();
+            updateHistoryDisplay();
+        });
+    </script>
+</body>
+
+</html>
