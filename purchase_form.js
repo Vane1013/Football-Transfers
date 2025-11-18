@@ -1,15 +1,15 @@
-// Данные менеджеров с бюджетом (0 звёзд)
+// Данные менеджеров с бюджетом
 const managers = {
     'Vanya': {
         name: 'Vanya',
-        email: 'vanya@football.com',
+        email: 'vanya@myteam.com',
         license: 'FIFA-AGENT-001',
         budget: 0,
         welcomeShown: false  // Флаг для отслеживания показа приветствия
     },
     'Serega': {
         name: 'Serega', 
-        email: 'serega@football.com',
+        email: 'serega@myteam.com',
         license: 'FIFA-AGENT-002',
         budget: 6,
         welcomeShown: false  // Флаг для отслеживания показа приветствия
