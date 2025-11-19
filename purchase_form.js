@@ -249,8 +249,3 @@ function closeSuccessMessage() {
     document.getElementById('successMessage').style.display = 'none';
     window.location.href = 'all_players.html';
 }
-
-
-
-
-
