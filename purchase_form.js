@@ -254,3 +254,4 @@ function closeSuccessMessage() {
     window.location.href = 'all_players.html';
 }
 
+
