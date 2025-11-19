@@ -96,10 +96,6 @@ function updateBudgetDisplay() {
 function showWelcomeMessage() {
     const manager = managers[currentManager];
     
-    // Показ приветственного сообщения
-function showWelcomeMessage() {
-    const manager = managers[currentManager];
-    
     // Проверяем, нужно ли показывать приветствие
     if (manager && !manager.welcomeShown) {
         // Создаем информационное сообщение
@@ -253,5 +249,6 @@ function closeSuccessMessage() {
     document.getElementById('successMessage').style.display = 'none';
     window.location.href = 'all_players.html';
 }
+
 
 
