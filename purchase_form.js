@@ -97,13 +97,13 @@ function showWelcomeMessage() {
     const manager = managers[currentManager];
     
     // Проверяем, нужно ли показывать приветствие
-    if (manager && manager.budget === 0 && !manager.welcomeShown) {
+    if (manager && !manager.welcomeShown) {
         // Создаем информационное сообщение
         welcomeAlert = document.createElement('div');
         welcomeAlert.className = 'alert alert-info';
         welcomeAlert.innerHTML = `
             <i class="fas fa-info-circle me-2"></i>
-            <strong>Welcome to Transfermarkt, ${currentManager}!</strong>
+            <strong>Welcome to Transfermarkt, ${currentManager}!</strong> You have ${manager.budget} stars available.
             <button type="button" class="btn-close float-end" onclick="removeWelcomeMessage()"></button>
         `;
         
@@ -249,6 +249,7 @@ function closeSuccessMessage() {
     document.getElementById('successMessage').style.display = 'none';
     window.location.href = 'all_players.html';
 }
+
 
 
 
