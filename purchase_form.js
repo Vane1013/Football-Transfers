@@ -11,7 +11,7 @@ const managers = {
         name: 'Serega', 
         email: 'serega@football.com',
         license: 'FIFA-AGENT-002',
-        budget: 6,
+        budget: 18,
         welcomeShown: false  // Флаг для отслеживания показа приветствия
     }
 };
@@ -249,3 +249,4 @@ function closeSuccessMessage() {
     document.getElementById('successMessage').style.display = 'none';
     window.location.href = 'all_players.html';
 }
+
