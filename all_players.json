@@ -156,18 +156,6 @@
         "img": "photos/alisson.png"
     },
     {
-        "id": "15",
-        "title": "Manuel Neuer",
-        "vendor_code": "115",
-        "description": "Revolutionized the goalkeeper role in modern football",
-        "number": 1,
-        "club": "Bayern Munich",
-        "country": "Germany",
-        "price": "8",
-        "role": "goalkeeper",
-        "img": "photos/neuer.png"
-    },
-    {
         "id": "16",
         "title": "Jan Oblak",
         "vendor_code": "116",
@@ -1189,6 +1177,7 @@
     }
 
 ]
+
 
 
 
