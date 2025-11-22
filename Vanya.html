@@ -16,6 +16,7 @@
             padding: 15px;
             margin: 20px 0;
         }
+
         .empty-section {
             background: #f8f9fa;
             border-radius: 10px;
@@ -23,11 +24,13 @@
             text-align: center;
             margin: 20px 0;
         }
+
         .empty-icon {
             font-size: 4rem;
             color: #6c757d;
             margin-bottom: 1rem;
         }
+
         .position-title {
             font-weight: 600;
             font-size: 1.5rem;
@@ -35,11 +38,23 @@
             padding-bottom: 0.5rem;
             border-bottom: 2px solid #007bff;
         }
+
         .stats-card {
             transition: transform 0.2s ease-in-out;
         }
+
         .stats-card:hover {
             transform: translateY(-2px);
+        }
+
+        .player-card {
+            transition: transform 0.2s ease-in-out;
+            border: 1px solid #e0e0e0;
+        }
+
+        .player-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
@@ -80,7 +95,7 @@
                             <p class="mb-0">Current transfer budget and team statistics</p>
                         </div>
                         <div class="col-md-4 text-end">
-                            <div class="h1 mb-0">⭐ 15</div>
+                            <div class="h1 mb-0">⭐ 7</div>
                             <small>Available Stars</small>
                         </div>
                     </div>
@@ -91,7 +106,7 @@
                     <div class="col-md-3 mb-3">
                         <div class="card stats-card text-center h-100">
                             <div class="card-body">
-                                <h3 class="text-primary">0</h3>
+                                <h3 class="text-primary">1</h3>
                                 <p class="text-muted mb-0">Total Players</p>
                             </div>
                         </div>
@@ -99,7 +114,7 @@
                     <div class="col-md-3 mb-3">
                         <div class="card stats-card text-center h-100">
                             <div class="card-body">
-                                <h3 class="text-success">⭐ 0</h3>
+                                <h3 class="text-success">⭐ 8</h3>
                                 <p class="text-muted mb-0">Team Value</p>
                             </div>
                         </div>
@@ -107,7 +122,7 @@
                     <div class="col-md-3 mb-3">
                         <div class="card stats-card text-center h-100">
                             <div class="card-body">
-                                <h3 class="text-warning">0</h3>
+                                <h3 class="text-warning">7.0</h3>
                                 <p class="text-muted mb-0">Average Rating</p>
                             </div>
                         </div>
@@ -127,19 +142,51 @@
                 <!-- Вратари -->
                 <div class="row">
                     <div class="col-12">
-                        <h3 class="position-title">⚽ Goalkeepers (0)</h3>
+                        <h3 class="position-title">⚽ Goalkeepers (1)</h3>
                     </div>
                 </div>
-                <div class="empty-section">
-                    <div class="empty-icon">
-                        <i class="fas fa-ghost"></i>
+                <!-- Карточка Нойера -->
+                <div class="row mb-4">
+                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-4">
+                        <div class="card h-100 d-flex flex-column shadow-sm player-card">
+                            <div class="card-img-container position-relative">
+                                <img class="card-img-top responsive-img mt-2" src="photos/neuer.png" alt="Manuel Neuer"
+                                    style="height: 200px; object-fit: contain;">
+                                <div class="position-absolute top-0 end-0 m-2">
+                                    <span class="badge bg-primary">#1</span>
+                                </div>
+                            </div>
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Manuel Neuer</h5>
+                                <div class="player-info mb-2">
+                                    <small class="text-muted d-block">
+                                        <i class="fas fa-shield-alt"></i> Bayern Munich
+                                    </small>
+                                    <small class="text-muted d-block">
+                                        <i class="fas fa-flag"></i> Germany
+                                    </small>
+                                </div>
+                                <p class="card-text flex-grow-1">Revolutionized the goalkeeper role in modern football
+                                </p>
+
+                                <!-- Блок со стоимостью -->
+                                <div class="price-section mb-3">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="text-success fw-bold fs-5">⭐ 8</span>
+                                        <span class="text-muted small">Purchase Price</span>
+                                    </div>
+                                </div>
+
+                                <div class="mt-auto">
+                                    <button class="btn btn-outline-secondary btn-sm w-100" disabled>
+                                        <i class="fas fa-check me-2"></i>In Your Team
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <h4 class="text-muted">No Goalkeepers in Your Team</h4>
-                    <p class="text-muted mb-4">You haven't purchased any goalkeepers yet. Visit the transfermarkt to strengthen your defense!</p>
-                    <a href="all_players.html" class="btn btn-primary">
-                        <i class="fas fa-shopping-cart me-2"></i>Go to Transfermarkt
-                    </a>
                 </div>
+
 
                 <!-- Защитники -->
                 <div class="row mt-5">
@@ -197,7 +244,7 @@
                     <div class="card-body text-center py-5">
                         <i class="fas fa-trophy fa-3x text-warning mb-3"></i>
                         <h3>Start Building Your Dream Team!</h3>
-                        <p class="lead mb-4">Your team is currently empty. Visit the transfermarkt to purchase players and build your squad.</p>
+                        <p class="lead mb-4">Great start with Manuel Neuer! Continue building your squad with more players.</p>
                         <div class="d-flex justify-content-center gap-3 flex-wrap">
                             <a href="all_players.html" class="btn btn-success btn-lg">
                                 <i class="fas fa-shopping-cart me-2"></i>Browse Transfermarkt
@@ -226,8 +273,6 @@
 
 </html>
 
-
-</html>
 
 
 
