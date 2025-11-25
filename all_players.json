@@ -816,18 +816,6 @@
         "img": "photos/baena.png"
     },
     {
-        "id": "71",
-        "title": "Daniel Carvajal",
-        "vendor_code": "171",
-        "description": "Spanish defender with physical presence",
-        "number": 2,
-        "club": "Real Madrid",
-        "country": "Spain",
-        "price": "10",
-        "role": "defender",
-        "img": "photos/carvajal.png"
-    },
-    {
         "id": "72",
         "title": "Ángel Di María",
         "vendor_code": "172",
@@ -862,18 +850,6 @@
         "price": "10",
         "role": "midfielder",
         "img": "photos/muller.png"
-    },
-    {
-        "id": "75",
-        "title": "Karim Benzema",
-        "vendor_code": "175",
-        "description": "French striker, Ballon d'Or winner",
-        "number": 9,
-        "club": "Al-Ittihad",
-        "country": "France",
-        "price": "20",
-        "role": "forward",
-        "img": "photos/benzema.png"
     },
     {
         "id": "76",
@@ -1177,6 +1153,7 @@
     }
 
 ]
+
 
 
 
