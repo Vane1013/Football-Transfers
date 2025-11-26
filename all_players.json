@@ -804,18 +804,6 @@
         "img": "photos/baena.png"
     },
     {
-        "id": "72",
-        "title": "Ángel Di María",
-        "vendor_code": "172",
-        "description": "Argentine winger with technical excellence",
-        "number": 11,
-        "club": "Rosario Central",
-        "country": "Argentina",
-        "price": "8",
-        "role": "forward",
-        "img": "photos/dimaria.png"
-    },
-    {
         "id": "73",
         "title": "Yann Sommer",
         "vendor_code": "173",
@@ -1141,6 +1129,7 @@
     }
 
 ]
+
 
 
 
