@@ -16,6 +16,7 @@
             padding: 15px;
             margin: 20px 0;
         }
+
         .empty-section {
             background: #f8f9fa;
             border-radius: 10px;
@@ -23,11 +24,13 @@
             text-align: center;
             margin: 20px 0;
         }
+
         .empty-icon {
             font-size: 4rem;
             color: #6c757d;
             margin-bottom: 1rem;
         }
+
         .position-title {
             font-weight: 600;
             font-size: 1.5rem;
@@ -35,19 +38,23 @@
             padding-bottom: 0.5rem;
             border-bottom: 2px solid #007bff;
         }
+
         .stats-card {
             transition: transform 0.2s ease-in-out;
         }
+
         .stats-card:hover {
             transform: translateY(-2px);
         }
+
         .player-card {
             transition: transform 0.2s ease-in-out;
             border: 1px solid #e0e0e0;
         }
+
         .player-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
@@ -73,7 +80,8 @@
                     <li class="nav-item"> <a class="nav-link" href="./all_players.html">Transfermarkt</a></li>
                     <li class="nav-item"> <a class="nav-link" href="./Vanya.html">Vanya's Players</a></li>
                     <li class="nav-item"> <a class="nav-link" href="./Serega.html">Serega's Players</a></li>
-                    <li class="nav-item"> <a class="nav-link active" href="./manager.html">The Manager's Players</a></li>
+                    <li class="nav-item"> <a class="nav-link active" href="./manager.html">The Manager's Players</a>
+                    </li>
                     <li class="nav-item"> <a class="nav-link" href="./wheel.html">Fortune Wheel</a></li>
                 </ul>
             </div>
@@ -143,7 +151,8 @@
                         <i class="fas fa-ghost"></i>
                     </div>
                     <h4 class="text-muted">No Goalkeepers in Your Team</h4>
-                    <p class="text-muted mb-4">You haven't purchased any goalkeepers yet. Visit the transfermarkt to strengthen your defense!</p>
+                    <p class="text-muted mb-4">You haven't purchased any goalkeepers yet. Visit the transfermarkt to
+                        strengthen your defense!</p>
                     <a href="all_players.html" class="btn btn-primary">
                         <i class="fas fa-shopping-cart me-2"></i>Go to Transfermarkt
                     </a>
@@ -173,15 +182,14 @@
                     </div>
                 </div>
 
-                <!-- Карточка Модрича -->
+                <!-- ОДИН row для всех полузащитников -->
                 <div class="row mb-4">
+                    <!-- Карточка Модрича -->
                     <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-4">
                         <div class="card h-100 d-flex flex-column shadow-sm player-card">
                             <div class="card-img-container position-relative">
-                                <img class="card-img-top responsive-img mt-2" 
-                                     src="photos/modric.png" 
-                                     alt="Luka Modrić"
-                                     style="height: 200px; object-fit: contain;">
+                                <img class="card-img-top responsive-img mt-2" src="photos/modric.png" alt="Luka Modrić"
+                                    style="height: 200px; object-fit: contain;">
                                 <div class="position-absolute top-0 end-0 m-2">
                                     <span class="badge bg-primary">#10</span>
                                 </div>
@@ -196,16 +204,16 @@
                                         <i class="fas fa-flag"></i> Croatia
                                     </small>
                                 </div>
-                                <p class="card-text flex-grow-1">2018 Ballon d'Or winner, record appearance maker for national team</p>
-                                
-                                <!-- Блок со стоимостью -->
+                                <p class="card-text flex-grow-1">2018 Ballon d'Or winner, record appearance maker for
+                                    national team</p>
+
                                 <div class="price-section mb-3">
                                     <div class="d-flex justify-content-between align-items-center">
                                         <span class="text-success fw-bold fs-5">⭐ 50</span>
                                         <span class="text-muted small">Purchase Price</span>
                                     </div>
                                 </div>
-                                
+
                                 <div class="mt-auto">
                                     <button class="btn btn-outline-secondary btn-sm w-100" disabled>
                                         <i class="fas fa-check me-2"></i>In Your Team
@@ -214,6 +222,8 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- Здесь можно добавить других полузащитников -->
                 </div>
 
                 <!-- Нападающие -->
@@ -222,15 +232,15 @@
                         <h3 class="position-title">⚡ Forwards (2)</h3>
                     </div>
                 </div>
-                <!-- Карточка Бенземы -->
+
+                <!-- ОДИН row для всех нападающих -->
                 <div class="row mb-4">
+                    <!-- Карточка Бенземы -->
                     <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-4">
                         <div class="card h-100 d-flex flex-column shadow-sm player-card">
                             <div class="card-img-container position-relative">
-                                <img class="card-img-top responsive-img mt-2" 
-                                     src="photos/benzema.png" 
-                                     alt="Karim Benzema"
-                                     style="height: 200px; object-fit: contain;">
+                                <img class="card-img-top responsive-img mt-2" src="photos/benzema.png"
+                                    alt="Karim Benzema" style="height: 200px; object-fit: contain;">
                                 <div class="position-absolute top-0 end-0 m-2">
                                     <span class="badge bg-primary">#9</span>
                                 </div>
@@ -246,15 +256,14 @@
                                     </small>
                                 </div>
                                 <p class="card-text flex-grow-1">French striker, Ballon d'Or winner (2022)</p>
-                                
-                                <!-- Блок со стоимостью -->
+
                                 <div class="price-section mb-3">
                                     <div class="d-flex justify-content-between align-items-center">
                                         <span class="text-success fw-bold fs-5">⭐ 20</span>
                                         <span class="text-muted small">Purchase Price</span>
                                     </div>
                                 </div>
-                                
+
                                 <div class="mt-auto">
                                     <button class="btn btn-outline-secondary btn-sm w-100" disabled>
                                         <i class="fas fa-check me-2"></i>In Your Team
@@ -263,17 +272,13 @@
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- Карточка Перишича -->
-                <div class="row mb-4">
+                    <!-- Карточка Перишича -->
                     <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-4">
                         <div class="card h-100 d-flex flex-column shadow-sm player-card">
                             <div class="card-img-container position-relative">
-                                <img class="card-img-top responsive-img mt-2" 
-                                     src="photos/perisic.png" 
-                                     alt="Ivan Perisić"
-                                     style="height: 200px; object-fit: contain;">
+                                <img class="card-img-top responsive-img mt-2" src="photos/perisic.png"
+                                    alt="Ivan Perisić" style="height: 200px; object-fit: contain;">
                                 <div class="position-absolute top-0 end-0 m-2">
                                     <span class="badge bg-primary">#4</span>
                                 </div>
@@ -288,16 +293,16 @@
                                         <i class="fas fa-flag"></i> Croatia
                                     </small>
                                 </div>
-                                <p class="card-text flex-grow-1">Croatian striker strong in aerial duels and being in defense</p>
-                                
-                                <!-- Блок со стоимостью -->
+                                <p class="card-text flex-grow-1">Croatian striker strong in aerial duels and being in
+                                    defense</p>
+
                                 <div class="price-section mb-3">
                                     <div class="d-flex justify-content-between align-items-center">
                                         <span class="text-success fw-bold fs-5">⭐ 10</span>
                                         <span class="text-muted small">Purchase Price</span>
                                     </div>
                                 </div>
-                                
+
                                 <div class="mt-auto">
                                     <button class="btn btn-outline-secondary btn-sm w-100" disabled>
                                         <i class="fas fa-check me-2"></i>In Your Team
@@ -307,7 +312,7 @@
                         </div>
                     </div>
                 </div>
-                
+
 
                 <!-- Призыв к действию -->
                 <div class="card mt-5 bg-light">
@@ -343,8 +348,3 @@
 
 
 </html>
-
-
-
-
-
