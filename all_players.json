@@ -528,18 +528,6 @@
         "img": "photos/havertz.png"
     },
     {
-        "id": "47",
-        "title": "Ivan Perisić",
-        "vendor_code": "147",
-        "description": "Croatian striker strong in aerial duels and being in defense",
-        "number": 5,
-        "club": "PSV",
-        "country": "Croatia",
-        "price": "10",
-        "role": "forward",
-        "img": "photos/perisic.png"
-    },
-    {
         "id": "48",
         "title": "André Onana",
         "vendor_code": "148",
@@ -1153,6 +1141,7 @@
     }
 
 ]
+
 
 
 
