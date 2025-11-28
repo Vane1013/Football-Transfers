@@ -816,18 +816,6 @@
         "img": "photos/sommer.png"
     },
     {
-        "id": "74",
-        "title": "Thomas Müller",
-        "vendor_code": "174",
-        "description": "German attacking midfielder with Raumdeuter role",
-        "number": 13,
-        "club": "Vancouver Whitecaps",
-        "country": "Germany",
-        "price": "10",
-        "role": "midfielder",
-        "img": "photos/muller.png"
-    },
-    {
         "id": "76",
         "title": "Lamine Yamal",
         "vendor_code": "176",
@@ -838,18 +826,6 @@
         "price": "200",
         "role": "forward",
         "img": "photos/yamal.png"
-    },
-    {
-        "id": "77",
-        "title": "Luis Suárez",
-        "vendor_code": "177",
-        "description": "Uruguayan striker with clinical finishing",
-        "number": 9,
-        "club": "Inter Miami",
-        "country": "Uruguay",
-        "price": "15",
-        "role": "forward",
-        "img": "photos/suarez.png"
     },
     {
         "id": "78",
@@ -1129,6 +1105,7 @@
     }
 
 ]
+
 
 
 
