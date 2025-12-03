@@ -804,18 +804,6 @@
         "img": "photos/baena.png"
     },
     {
-        "id": "73",
-        "title": "Yann Sommer",
-        "vendor_code": "173",
-        "description": "Swiss goalkeeper with reliable performances",
-        "number": 1,
-        "club": "Inter Milan",
-        "country": "Switzerland",
-        "price": "14",
-        "role": "goalkeeper",
-        "img": "photos/sommer.png"
-    },
-    {
         "id": "76",
         "title": "Lamine Yamal",
         "vendor_code": "176",
@@ -1090,21 +1078,9 @@
         "price": "38",
         "role": "defender",
         "img": "photos/deligt.png"
-    },
-    {
-        "id": "100",
-        "title": "Harry Maguire",
-        "vendor_code": "200",
-        "description": "English central defender with exceptional speed",
-        "number": 5,
-        "club": "Manchester United",
-        "country": "England",
-        "price": "15",
-        "role": "defender",
-        "img": "photos/maguire.png"
     }
-
 ]
+
 
 
 
