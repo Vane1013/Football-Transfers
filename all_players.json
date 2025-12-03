@@ -618,7 +618,7 @@
         "description": "Croatian defender strong in aerial duels",
         "number": 28,
         "club": "Bayern Munich",
-        "country": "Croatian",
+        "country": "Croatia",
         "price": "32",
         "role": "defender",
         "img": "photos/stanisic.png"
@@ -1080,6 +1080,7 @@
         "img": "photos/deligt.png"
     }
 ]
+
 
 
 
