@@ -949,15 +949,15 @@
     },
     {
         "id": "90",
-        "title": "Casemiro",
+        "title": "Matvey Safonov",
         "vendor_code": "190",
-        "description": "Brazilian attacking midfielder with technique",
-        "number": 18,
-        "club": "Manchester United",
-        "country": "Brazil",
-        "price": "18",
-        "role": "midfielder",
-        "img": "photos/casemiro.png"
+        "description": "Skilled Russian goalkeeper",
+        "number": 39,
+        "club": "PSG",
+        "country": "Russia",
+        "price": "20",
+        "role": "goalkeeper",
+        "img": "photos/safonov.png"
     },
     {
         "id": "91",
@@ -1068,6 +1068,7 @@
         "img": "photos/deligt.png"
     }
 ]
+
 
 
 
