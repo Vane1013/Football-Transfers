@@ -72,18 +72,6 @@
         "img": "photos/lewandowski.png"
     },
     {
-        "id": "7",
-        "title": "Kevin De Bruyne",
-        "vendor_code": "107",
-        "description": "Considered one of the best playmakers in the world",
-        "number": 11,
-        "club": "Napoli",
-        "country": "Belgium",
-        "price": "25",
-        "role": "midfielder",
-        "img": "photos/de bruyne.png"
-    },
-    {
         "id": "9",
         "title": "Federico Valverde",
         "vendor_code": "109",
@@ -1080,6 +1068,7 @@
         "img": "photos/deligt.png"
     }
 ]
+
 
 
 
