@@ -1198,5 +1198,18 @@
         "price": "10",
         "role": "goalkeeper",
         "img": "photos/livakovic.png"
+    },
+    {
+        "id": "101",
+        "title": "Christian Pulisić",
+        "vendor_code": "201",
+        "description": "Skilled Croatian forward from the USA with leadership",
+        "number": 11,
+        "club": "AC Milan",
+        "country": "USA",
+        "price": "40",
+        "role": "forward",
+        "img": "photos/pulisic.png"
     }
 ]
+
