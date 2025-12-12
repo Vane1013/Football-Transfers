@@ -204,18 +204,6 @@
         "img": "photos/ederson.png"
     },
     {
-        "id": "18",
-        "title": "Virgil van Dijk",
-        "vendor_code": "118",
-        "description": "Liverpool captain, strong in air and tackles",
-        "number": 4,
-        "club": "Liverpool",
-        "country": "Netherlands",
-        "price": "35",
-        "role": "defender",
-        "img": "photos/vandijk.png"
-    },
-    {
         "id": "19",
         "title": "Rúben Dias",
         "vendor_code": "119",
@@ -840,18 +828,6 @@
         "img": "photos/baena.png"
     },
     {
-        "id": "71",
-        "title": "Antony",
-        "vendor_code": "171",
-        "description": "Legendary Brazilian winger",
-        "number": 7,
-        "club": "Real Betis",
-        "country": "Brazil",
-        "price": "25",
-        "role": "forward",
-        "img": "photos/antony.png"
-    },
-    {
         "id": "72",
         "title": "Mateo Kovačić",
         "vendor_code": "172",
@@ -1212,4 +1188,5 @@
         "img": "photos/pulisic.png"
     }
 ]
+
 
