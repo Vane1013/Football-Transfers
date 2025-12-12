@@ -4,7 +4,7 @@ const managers = {
         name: 'Vanya',
         email: 'vanya@football.com',
         license: 'FIFA-AGENT-001',
-        budget: 25,
+        budget: -3,
         welcomeShown: false  // Флаг для отслеживания показа приветствия
     },
     'Serega': {
@@ -249,4 +249,5 @@ function closeSuccessMessage() {
     document.getElementById('successMessage').style.display = 'none';
     window.location.href = 'all_players.html';
 }
+
 
