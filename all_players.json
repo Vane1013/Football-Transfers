@@ -852,18 +852,6 @@
         "img": "photos/torres.png"
     },
     {
-        "id": "74",
-        "title": "Alexis Salemakers",
-        "vendor_code": "174",
-        "description": "Young midfielder from Belgium",
-        "number": 56,
-        "club": "AC Milan",
-        "country": "Belgium",
-        "price": "20",
-        "role": "midfielder",
-        "img": "photos/salemakers.png"
-    },
-    {
         "id": "75",
         "title": "Mike Maignan",
         "vendor_code": "175",
@@ -1162,31 +1150,8 @@
         "price": "38",
         "role": "defender",
         "img": "photos/deligt.png"
-    },
-    {
-        "id": "100",
-        "title": "Dominik Livaković",
-        "vendor_code": "200",
-        "description": "Skilled Croatian goalkeeper",
-        "number": 1,
-        "club": "Girona",
-        "country": "Croatia",
-        "price": "10",
-        "role": "goalkeeper",
-        "img": "photos/livakovic.png"
-    },
-    {
-        "id": "101",
-        "title": "Christian Pulisić",
-        "vendor_code": "201",
-        "description": "Skilled Croatian forward from the USA with leadership",
-        "number": 11,
-        "club": "AC Milan",
-        "country": "USA",
-        "price": "40",
-        "role": "forward",
-        "img": "photos/pulisic.png"
     }
 ]
+
 
 
