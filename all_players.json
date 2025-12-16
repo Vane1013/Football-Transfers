@@ -876,18 +876,6 @@
         "img": "photos/yamal.png"
     },
     {
-        "id": "77",
-        "title": "Benjamin Pavard",
-        "vendor_code": "177",
-        "description": "French experienced defender",
-        "number": 28,
-        "club": "Olympique de Marseille",
-        "country": "France",
-        "price": "20",
-        "role": "defender",
-        "img": "photos/pavard.png"
-    },
-    {
         "id": "78",
         "title": "Sergio Ramos",
         "vendor_code": "178",
@@ -1152,6 +1140,7 @@
         "img": "photos/deligt.png"
     }
 ]
+
 
 
 
