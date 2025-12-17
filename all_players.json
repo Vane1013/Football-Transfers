@@ -828,18 +828,6 @@
         "img": "photos/baena.png"
     },
     {
-        "id": "72",
-        "title": "Mateo Kovačić",
-        "vendor_code": "172",
-        "description": "Croatian midfielder with good technique",
-        "number": 8,
-        "club": "Manchester City",
-        "country": "Croatia",
-        "price": "20",
-        "role": "midfielder",
-        "img": "photos/kovacic.png"
-    },
-    {
         "id": "73",
         "title": "Ferran Torres",
         "vendor_code": "173",
@@ -1140,6 +1128,7 @@
         "img": "photos/deligt.png"
     }
 ]
+
 
 
 
