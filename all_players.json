@@ -216,18 +216,6 @@
         "img": "photos/dias.png"
     },
     {
-        "id": "20",
-        "title": "Antonio Rüdiger",
-        "vendor_code": "120",
-        "description": "Physically strong and fast central defender",
-        "number": 22,
-        "club": "Real Madrid",
-        "country": "Germany",
-        "price": "28",
-        "role": "defender",
-        "img": "photos/rudiger.png"
-    },
-    {
         "id": "21",
         "title": "Trent Alexander-Arnold",
         "vendor_code": "121",
@@ -1128,6 +1116,7 @@
         "img": "photos/deligt.png"
     }
 ]
+
 
 
 
