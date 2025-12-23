@@ -636,18 +636,6 @@
         "img": "photos/stanisic.png"
     },
     {
-        "id": "56",
-        "title": "Arda Güler",
-        "vendor_code": "156",
-        "description": "Young Turkish attacking midfielder",
-        "number": 15,
-        "club": "Real Madrid",
-        "country": "Turkey",
-        "price": "30",
-        "role": "midfielder",
-        "img": "photos/guler.png"
-    },
-    {
         "id": "57",
         "title": "Raheem Sterling",
         "vendor_code": "157",
@@ -1116,4 +1104,5 @@
         "img": "photos/deligt.png"
     }
 ]
+
 
