@@ -636,6 +636,18 @@
         "img": "photos/stanisic.png"
     },
     {
+        "id": "56",
+        "title": "Raúl Asencio",
+        "vendor_code": "156",
+        "description": "Spanish defender like new Ramos",
+        "number": 17,
+        "club": "Real Madrid",
+        "country": "Spain",
+        "price": "30",
+        "role": "defender",
+        "img": "photos/asencio.png"
+    },
+    {
         "id": "57",
         "title": "Raheem Sterling",
         "vendor_code": "157",
@@ -816,6 +828,18 @@
         "img": "photos/torres.png"
     },
     {
+        "id": "74",
+        "title": "Pau Cubarsí",
+        "vendor_code": "174",
+        "description": "Spanish central defender with amazing skills",
+        "number": 5,
+        "club": "Barcelona",
+        "country": "Spain",
+        "price": "35",
+        "role": "defender",
+        "img": "photos/cubarsi.png"
+    },
+    {
         "id": "75",
         "title": "Mike Maignan",
         "vendor_code": "175",
@@ -838,6 +862,18 @@
         "price": "200",
         "role": "forward",
         "img": "photos/yamal.png"
+    },
+    {
+        "id": "77",
+        "title": "Denzel Dumfries",
+        "vendor_code": "177",
+        "description": "Spanish young forward with good perspectives",
+        "number": 2,
+        "club": "Inter Milan",
+        "country": "Netherlands",
+        "price": "25",
+        "role": "defender",
+        "img": "photos/dumfries.png"
     },
     {
         "id": "78",
@@ -1102,7 +1138,29 @@
         "price": "38",
         "role": "defender",
         "img": "photos/deligt.png"
+    },
+    {
+        "id": "100",
+        "title": "Dean Huijsen",
+        "vendor_code": "200",
+        "description": "Perspective defender from Spain",
+        "number": 24,
+        "club": "Real Madrid",
+        "country": "Spain",
+        "price": "40",
+        "role": "defender",
+        "img": "photos/huijsen.png"
+    },
+    {
+        "id": "101",
+        "title": "Abdukodir Khusanov",
+        "vendor_code": "201",
+        "description": "Perspective defender from Uzbekistan",
+        "number": 45,
+        "club": "Manchester City",
+        "country": "Uzbekistan",
+        "price": "35",
+        "role": "defender",
+        "img": "photos/khusanov.png"
     }
 ]
-
-
