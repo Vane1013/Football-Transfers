@@ -864,18 +864,6 @@
         "img": "photos/yamal.png"
     },
     {
-        "id": "78",
-        "title": "Sergio Ramos",
-        "vendor_code": "178",
-        "description": "Spanish central defender with leadership",
-        "number": 93,
-        "club": "Monterrey",
-        "country": "Spain",
-        "price": "75",
-        "role": "defender",
-        "img": "photos/ramos.png"
-    },
-    {
         "id": "79",
         "title": "Lucas Hernandez",
         "vendor_code": "179",
@@ -1152,5 +1140,6 @@
         "img": "photos/khusanov.png"
     }
 ]
+
 
 
