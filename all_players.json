@@ -1117,20 +1117,8 @@
     },
     {
         "id": "100",
-        "title": "Dean Huijsen",
-        "vendor_code": "200",
-        "description": "Perspective defender from Spain",
-        "number": 24,
-        "club": "Real Madrid",
-        "country": "Spain",
-        "price": "40",
-        "role": "defender",
-        "img": "photos/huijsen.png"
-    },
-    {
-        "id": "101",
         "title": "Abdukodir Khusanov",
-        "vendor_code": "201",
+        "vendor_code": "200",
         "description": "Perspective defender from Uzbekistan",
         "number": 45,
         "club": "Manchester City",
@@ -1140,6 +1128,7 @@
         "img": "photos/khusanov.png"
     }
 ]
+
 
 
 
