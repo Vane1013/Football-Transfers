@@ -12,18 +12,6 @@
         "img": "photos/messi.png"
     },
     {
-        "id": "2",
-        "title": "Cristiano Ronaldo",
-        "vendor_code": "102",
-        "description": "All-time top goalscorer in football history, 5 Ballon d'Or awards",
-        "number": 7,
-        "club": "Al-Nassr",
-        "country": "Portugal",
-        "price": "100",
-        "role": "forward",
-        "img": "photos/ronaldo.png"
-    },
-    {
         "id": "3",
         "title": "Kylian Mbappé",
         "vendor_code": "103",
@@ -1128,6 +1116,7 @@
         "img": "photos/khusanov.png"
     }
 ]
+
 
 
 
