@@ -111,5 +111,4 @@ function addBuyButtonListeners() {
     });
 }
 
-
 getResponce();
