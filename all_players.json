@@ -1,17 +1,5 @@
 [
     {
-        "id": "1",
-        "title": "Lionel Messi",
-        "vendor_code": "101",
-        "description": "8-time Ballon d'Or winner, all-time top scorer for Argentina",
-        "number": 10,
-        "club": "Inter Miami",
-        "country": "Argentina",
-        "price": "100",
-        "role": "forward",
-        "img": "photos/messi.png"
-    },
-    {
         "id": "3",
         "title": "Kylian Mbappé",
         "vendor_code": "103",
@@ -1116,6 +1104,7 @@
         "img": "photos/khusanov.png"
     }
 ]
+
 
 
 
