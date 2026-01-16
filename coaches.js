@@ -1,5 +1,5 @@
 async function getResponce() {
-    let responce = await fetch("all_players.json")
+    let responce = await fetch("coaches.json")
     let content = await responce.text()
     content = JSON.parse(content)
     
@@ -110,5 +110,6 @@ function addBuyButtonListeners() {
         }
     });
 }
+
 
 getResponce();
