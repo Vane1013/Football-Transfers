@@ -1113,7 +1113,7 @@
         "country": "Italy",
         "price": "200",
         "role": "coach",
-        "img": "photos/ancelotti.jpg"
+        "img": "photos/ancelotti.png"
     },
     {
         "id": "102",
@@ -1125,7 +1125,7 @@
         "country": "France",
         "price": "200",
         "role": "coach",
-        "img": "photos/zidane.jpg"
+        "img": "photos/zidane.png"
     },
     {
         "id": "103",
@@ -1137,7 +1137,7 @@
         "country": "Spain",
         "price": "200",
         "role": "coach",
-        "img": "photos/alonso.jpg"
+        "img": "photos/alonso.png"
     },
     {
         "id": "104",
@@ -1149,7 +1149,7 @@
         "country": "Italy",
         "price": "200",
         "role": "coach",
-        "img": "photos/allegri.jpg"
+        "img": "photos/allegri.png"
     },
     {
         "id": "105",
@@ -1161,7 +1161,7 @@
         "country": "Germany",
         "price": "200",
         "role": "coach",
-        "img": "photos/flick.jpg"
+        "img": "photos/flick.png"
     },
     {
         "id": "106",
@@ -1173,7 +1173,7 @@
         "country": "Portugal",
         "price": "200",
         "role": "coach",
-        "img": "photos/mourinho.jpg"
+        "img": "photos/mourinho.png"
     },
     {
         "id": "107",
@@ -1185,7 +1185,7 @@
         "country": "Spain",
         "price": "200",
         "role": "coach",
-        "img": "photos/guardiola.jpg"
+        "img": "photos/guardiola.png"
     },
     {
         "id": "108",
@@ -1197,7 +1197,7 @@
         "country": "Argentina",
         "price": "200",
         "role": "coach",
-        "img": "photos/simeone.jpg"
+        "img": "photos/simeone.png"
     },
     {
         "id": "109",
@@ -1209,7 +1209,7 @@
         "country": "Spain",
         "price": "200",
         "role": "coach",
-        "img": "photos/enrique.jpg"
+        "img": "photos/enrique.png"
     },
     {
         "id": "110",
@@ -1221,7 +1221,7 @@
         "country": "Spain",
         "price": "200",
         "role": "coach",
-        "img": "photos/arteta.jpg"
+        "img": "photos/arteta.png"
     },
     {
         "id": "111",
@@ -1233,7 +1233,7 @@
         "country": "Russia",
         "price": "200",
         "role": "coach",
-        "img": "photos/semak.jpg"
+        "img": "photos/semak.png"
     },
     {
         "id": "112",
@@ -1245,7 +1245,7 @@
         "country": "Italy",
         "price": "200",
         "role": "coach",
-        "img": "photos/derossi.jpg"
+        "img": "photos/derossi.png"
     },
     {
         "id": "113",
@@ -1257,7 +1257,7 @@
         "country": "Belgium",
         "price": "200",
         "role": "coach",
-        "img": "photos/kompany.jpg"
+        "img": "photos/kompany.png"
     },
     {
         "id": "114",
@@ -1269,7 +1269,7 @@
         "country": "Spain",
         "price": "200",
         "role": "coach",
-        "img": "photos/xavi.jpg"
+        "img": "photos/xavi.png"
     },
     {
         "id": "115",
@@ -1281,14 +1281,6 @@
         "country": "Italy",
         "price": "200",
         "role": "coach",
-        "img": "photos/inzaghi.jpg"
+        "img": "photos/inzaghi.png"
     }
 ]
-
-
-
-
-
-
-
-
