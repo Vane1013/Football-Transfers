@@ -7,6 +7,20 @@
     <title>Transfermarkt</title>
     <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .coach-icon {
+            color: #ff6b6b;
+            margin-right: 5px;
+        }
+        .coach-section {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+    </style>
 </head>
 
 <body>
@@ -18,26 +32,36 @@
             <div class="card-body">
                 <h3 class="card-title text-center" style="color: black; 
                        text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;">
-                    Football Transfers.<br><br>Study well and create your own team!
+                    Football Transfers<br><br>Study well and create your own team!
                 </h3>
             </div>
         </header>
 
-         <div class="card">
+        <div class="card">
             <div class="card-body">
                 <ul class="nav nav-tabs">
                     <li class="nav-item"> <a class="nav-link" href="./index.html">The Rules and Exchange Rate</a></li>
-                    <li class="nav-item"> <a class="nav-link active" href="./all_players.html">Transfermarkt</a></li>
-                    <li class="nav-item"> <a class="nav-link" href="./Vanya.html">Vanya's Players</a></li>
-                    <li class="nav-item"> <a class="nav-link" href="./Serega.html">Serega's Players</a></li>
-                    <li class="nav-item"> <a class="nav-link" href="./manager.html">The Manager's Players</a></li>
+                    <li class="nav-item"> <a class="nav-link active" href="./all_players.html">Players Market</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="./coaches.html">Coaches Market</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="./Vanya.html">Vanya's Team</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="./Serega.html">Serega's Team</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="./manager.html">Manager's Team</a></li>
                     <li class="nav-item"> <a class="nav-link" href="./wheel.html">Fortune Wheel</a></li>
                 </ul>
             </div>
 
             <!--начало уникального содержания страницы-->
-            <!-- В разделе с карточками игроков -->
             <div class="card-body">
+                <div class="coach-section">
+                    <h4 class="text-center mb-3">
+                        <i class="fas fa-whistle coach-icon"></i> Premium Coaches Available!
+                    </h4>
+                    <p class="text-center mb-0">
+                        World-class coaches now available for ⭐ 200 each! 
+                        <a href="coaches.html" class="text-warning fw-bold">View Coaches →</a>
+                    </p>
+                </div>
+                
                 <h5 class='card-title text-center mb-4'>Players and their Value</h5>
                 <form action="https://www.bing.com/search?" id="UserEnter" name="UserEnter" target="_blank">
                     <input name="q" type="hidden" value="search">
@@ -65,5 +89,3 @@
 <script src="all_players.js"></script>
 
 </html>
-
-
