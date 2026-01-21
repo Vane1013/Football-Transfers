@@ -178,5 +178,17 @@
         "price": "200",
         "role": "coach",
         "img": "photos/inzaghi.png"
+    },
+    {
+        "id": "116",
+        "title": "Sir Alexander Ferguson",
+        "vendor_code": "216",
+        "description": "Legendary Scotish coach, famous for training Man United",
+        "number": 0,
+        "club": "Free Agent",
+        "country": "Scotland",
+        "price": "200",
+        "role": "coach",
+        "img": "photos/ferguson.png"
     }
 ]
