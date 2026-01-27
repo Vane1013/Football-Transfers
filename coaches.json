@@ -7,7 +7,7 @@
         "number": 0,
         "club": "Brazil",
         "country": "Italy",
-        "price": "200",
+        "price": "295",
         "role": "coach",
         "img": "photos/ancelotti.png"
     },
@@ -19,7 +19,7 @@
         "number": 0,
         "club": "Free Agent",
         "country": "France",
-        "price": "200",
+        "price": "285",
         "role": "coach",
         "img": "photos/zidane.png"
     },
@@ -31,7 +31,7 @@
         "number": 0,
         "club": "Free Agent",
         "country": "Spain",
-        "price": "200",
+        "price": "255",
         "role": "coach",
         "img": "photos/alonso.png"
     },
@@ -43,7 +43,7 @@
         "number": 0,
         "club": "AC Milan",
         "country": "Italy",
-        "price": "200",
+        "price": "260",
         "role": "coach",
         "img": "photos/allegri.png"
     },
@@ -55,7 +55,7 @@
         "number": 0,
         "club": "Barcelona",
         "country": "Germany",
-        "price": "200",
+        "price": "275",
         "role": "coach",
         "img": "photos/flick.png"
     },
@@ -67,7 +67,7 @@
         "number": 0,
         "club": "Benfica",
         "country": "Portugal",
-        "price": "200",
+        "price": "290",
         "role": "coach",
         "img": "photos/mourinho.png"
     },
@@ -79,7 +79,7 @@
         "number": 0,
         "club": "Manchester City",
         "country": "Spain",
-        "price": "200",
+        "price": "300",
         "role": "coach",
         "img": "photos/guardiola.png"
     },
@@ -91,7 +91,7 @@
         "number": 0,
         "club": "Atlético Madrid",
         "country": "Argentina",
-        "price": "200",
+        "price": "275",
         "role": "coach",
         "img": "photos/simeone.png"
     },
@@ -103,7 +103,7 @@
         "number": 0,
         "club": "Paris Saint-Germain",
         "country": "Spain",
-        "price": "200",
+        "price": "280",
         "role": "coach",
         "img": "photos/enrique.png"
     },
@@ -115,7 +115,7 @@
         "number": 0,
         "club": "Arsenal",
         "country": "Spain",
-        "price": "200",
+        "price": "250",
         "role": "coach",
         "img": "photos/arteta.png"
     },
@@ -127,7 +127,7 @@
         "number": 0,
         "club": "Zenit",
         "country": "Russia",
-        "price": "200",
+        "price": "210",
         "role": "coach",
         "img": "photos/semak.png"
     },
@@ -139,7 +139,7 @@
         "number": 0,
         "club": "Genoa",
         "country": "Italy",
-        "price": "200",
+        "price": "225",
         "role": "coach",
         "img": "photos/derossi.png"
     },
@@ -151,7 +151,7 @@
         "number": 0,
         "club": "Bayern Munich",
         "country": "Belgium",
-        "price": "200",
+        "price": "245",
         "role": "coach",
         "img": "photos/kompany.png"
     },
@@ -163,7 +163,7 @@
         "number": 0,
         "club": "Free Agent",
         "country": "Spain",
-        "price": "200",
+        "price": "235",
         "role": "coach",
         "img": "photos/xavi.png"
     },
@@ -175,7 +175,7 @@
         "number": 0,
         "club": "Al-Hilal",
         "country": "Italy",
-        "price": "200",
+        "price": "270",
         "role": "coach",
         "img": "photos/inzaghi.png"
     },
@@ -187,8 +187,9 @@
         "number": 0,
         "club": "Free Agent",
         "country": "Scotland",
-        "price": "200",
+        "price": "300",
         "role": "coach",
         "img": "photos/ferguson.png"
     }
 ]
+
