@@ -144,18 +144,6 @@
         "img": "photos/alisson.png"
     },
     {
-        "id": "15",
-        "title": "William Saliba",
-        "vendor_code": "115",
-        "description": "Key defender for Arsenal and France",
-        "number": 2,
-        "club": "Arsenal",
-        "country": "France",
-        "price": "70",
-        "role": "defender",
-        "img": "photos/saliba.png"
-    },
-    {
         "id": "16",
         "title": "Jan Oblak",
         "vendor_code": "116",
@@ -1104,3 +1092,4 @@
         "img": "photos/khusanov.png"
     }
 ]
+
