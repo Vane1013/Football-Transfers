@@ -588,18 +588,6 @@
         "img": "photos/lloris.png"
     },
     {
-        "id": "55",
-        "title": "Yosip Stanišić",
-        "vendor_code": "155",
-        "description": "Croatian defender strong in aerial duels",
-        "number": 28,
-        "club": "Bayern Munich",
-        "country": "Croatia",
-        "price": "32",
-        "role": "defender",
-        "img": "photos/stanisic.png"
-    },
-    {
         "id": "56",
         "title": "Raúl Asencio",
         "vendor_code": "156",
@@ -1092,4 +1080,5 @@
         "img": "photos/khusanov.png"
     }
 ]
+
 
