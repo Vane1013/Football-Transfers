@@ -204,18 +204,6 @@
         "img": "photos/davies.png"
     },
     {
-        "id": "23",
-        "title": "Achraf Hakimi",
-        "vendor_code": "123",
-        "description": "Extremely fast full-back",
-        "number": 2,
-        "club": "PSG",
-        "country": "Morocco",
-        "price": "80",
-        "role": "defender",
-        "img": "photos/hakimi.png"
-    },
-    {
         "id": "24",
         "title": "João Cancelo",
         "vendor_code": "124",
@@ -1080,5 +1068,6 @@
         "img": "photos/khusanov.png"
     }
 ]
+
 
 
