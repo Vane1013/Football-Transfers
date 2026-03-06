@@ -240,18 +240,6 @@
         "img": "photos/bellingham.png"
     },
     {
-        "id": "27",
-        "title": "Pedri",
-        "vendor_code": "127",
-        "description": "Technical Spanish midfielder with brilliant vision",
-        "number": 8,
-        "club": "Barcelona",
-        "country": "Spain",
-        "price": "90",
-        "role": "midfielder",
-        "img": "photos/pedri.png"
-    },
-    {
         "id": "28",
         "title": "Frenkie de Jong",
         "vendor_code": "128",
@@ -984,18 +972,6 @@
         "img": "photos/sorloth.png"
     },
     {
-        "id": "94",
-        "title": "Michael Olise",
-        "vendor_code": "194",
-        "description": "English winger with creative flair",
-        "number": 7,
-        "club": "Crystal Palace",
-        "country": "England",
-        "price": "50",
-        "role": "forward",
-        "img": "photos/olise.png"
-    },
-    {
         "id": "95",
         "title": "Jérémy Doku",
         "vendor_code": "195",
@@ -1056,6 +1032,7 @@
         "img": "photos/khusanov.png"
     }
 ]
+
 
 
 
