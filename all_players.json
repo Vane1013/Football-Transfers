@@ -948,18 +948,6 @@
         "img": "photos/alvarez.png"
     },
     {
-        "id": "92",
-        "title": "Raphinha",
-        "vendor_code": "192",
-        "description": "Brazilian winger with speed and skill",
-        "number": 11,
-        "club": "Barcelona",
-        "country": "Brazil",
-        "price": "110",
-        "role": "forward",
-        "img": "photos/raphinha.png"
-    },
-    {
         "id": "93",
         "title": "Alexander Sørloth",
         "vendor_code": "193",
@@ -1032,6 +1020,7 @@
         "img": "photos/khusanov.png"
     }
 ]
+
 
 
 
