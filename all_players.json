@@ -48,18 +48,6 @@
         "img": "photos/lewandowski.png"
     },
     {
-        "id": "7",
-        "title": "Declan Rice",
-        "vendor_code": "107",
-        "description": "Central midfielder with great tricks",
-        "number": 41,
-        "club": "Arsenal",
-        "country": "England",
-        "price": "65",
-        "role": "midfielder",
-        "img": "photos/rice.png"
-    },
-    {
         "id": "8",
         "title": "Alexis Mac Allister",
         "vendor_code": "108",
@@ -1020,6 +1008,7 @@
         "img": "photos/khusanov.png"
     }
 ]
+
 
 
 
