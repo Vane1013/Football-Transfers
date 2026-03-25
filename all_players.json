@@ -684,18 +684,6 @@
         "img": "photos/nkunku.png"
     },
     {
-        "id": "67",
-        "title": "Nuno Mendes",
-        "vendor_code": "167",
-        "description": "Portugese left-back with crossing ability",
-        "number": 25,
-        "club": "PSG",
-        "country": "Portugal",
-        "price": "75",
-        "role": "defender",
-        "img": "photos/mendes.png"
-    },
-    {
         "id": "68",
         "title": "Richarlison",
         "vendor_code": "168",
