@@ -24,18 +24,6 @@
         "img": "photos/zidane.png"
     },
     {
-        "id": "103",
-        "title": "Xabi Alonso",
-        "vendor_code": "203",
-        "description": "Former world-class midfielder, promising young coach, made impossible with Bayer Leverkusen",
-        "number": 0,
-        "club": "Free Agent",
-        "country": "Spain",
-        "price": "255",
-        "role": "coach",
-        "img": "photos/alonso.png"
-    },
-    {
         "id": "104",
         "title": "Massimiliano Allegri",
         "vendor_code": "204",
