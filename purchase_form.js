@@ -4,7 +4,7 @@ const managers = {
         name: 'Vanya',
         email: 'vanya@football.com',
         license: 'FIFA-AGENT-001',
-        budget: 14,
+        budget: 29,
         welcomeShown: false  // Флаг для отслеживания показа приветствия
     },
     'Serega': {
