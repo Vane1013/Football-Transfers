@@ -60,18 +60,6 @@
         "img": "photos/macalister.png"
     },
     {
-        "id": "9",
-        "title": "Federico Valverde",
-        "vendor_code": "109",
-        "description": "Known for his incredibly accurate passing",
-        "number": 8,
-        "club": "Real Madrid",
-        "country": "Uruguay",
-        "price": "130",
-        "role": "midfielder",
-        "img": "photos/valverde.png"
-    },
-    {
         "id": "10",
         "title": "Vinícius Júnior",
         "vendor_code": "110",
@@ -106,18 +94,6 @@
         "price": "90",
         "role": "forward",
         "img": "photos/kane.png"
-    },
-    {
-        "id": "13",
-        "title": "Thibaut Courtois",
-        "vendor_code": "113",
-        "description": "Known for his decisive saves in important matches",
-        "number": 1,
-        "club": "Real Madrid",
-        "country": "Belgium",
-        "price": "35",
-        "role": "goalkeeper",
-        "img": "photos/courtois.png"
     },
     {
         "id": "14",
