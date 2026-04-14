@@ -109,15 +109,15 @@
     },
     {
         "id": "r10",
-        "title": "Zinédine Zidane",
+        "title": "Andrea Pirlo",
         "vendor_code": "R010",
-        "description": "French maestro, legendary technique, World Cup and Euro winner",
-        "number": 10,
-        "club": "Real Madrid",
-        "country": "France",
+        "description": "Italian maestro, legendary technique, World Cup winner",
+        "number": 21,
+        "club": "AC Milan",
+        "country": "Italy",
         "price": "180",
         "role": "midfielder",
-        "img": "photos/zidane.jpg"
+        "img": "photos/pirlo.jpg"
     },
     {
         "id": "r11",
@@ -370,5 +370,29 @@
         "price": "85",
         "role": "forward",
         "img": "photos/torres_r.jpg"
+    },
+    {
+        "id": "r32",
+        "title": "Raúl",
+        "vendor_code": "R032",
+        "description": "Spanish top-scorer in the centre, galacticos' legend",
+        "number": 7,
+        "club": "Real Madrid",
+        "country": "Spain",
+        "price": "100",
+        "role": "forward",
+        "img": "photos/raul.jpg"
+    },
+    {
+        "id": "r33",
+        "title": "Sergio Agüero",
+        "vendor_code": "R033",
+        "description": "World-class forward, famous in Manchester City",
+        "number": 10,
+        "club": "Manchester City",
+        "country": "Argentina",
+        "price": "85",
+        "role": "forward",
+        "img": "photos/aguero.jpg"
     }
 ]
