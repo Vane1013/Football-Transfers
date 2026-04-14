@@ -7,7 +7,7 @@
         "number": 10,
         "club": "Santos",
         "country": "Brazil",
-        "price": "250",
+        "price": "200",
         "role": "forward",
         "img": "photos/pele.jpg"
     },
@@ -19,7 +19,7 @@
         "number": 10,
         "club": "Napoli",
         "country": "Argentina",
-        "price": "250",
+        "price": "200",
         "role": "forward",
         "img": "photos/maradona.jpg"
     },
@@ -31,7 +31,7 @@
         "number": 5,
         "club": "Bayern Munich",
         "country": "Germany",
-        "price": "220",
+        "price": "180",
         "role": "defender",
         "img": "photos/beckenbauer.jpg"
     },
@@ -43,7 +43,7 @@
         "number": 14,
         "club": "Ajax",
         "country": "Netherlands",
-        "price": "230",
+        "price": "190",
         "role": "forward",
         "img": "photos/cruyff.jpg"
     },
@@ -55,7 +55,7 @@
         "number": 1,
         "club": "Dynamo Moscow",
         "country": "Russia",
-        "price": "200",
+        "price": "160",
         "role": "goalkeeper",
         "img": "photos/yashin.jpg"
     },
@@ -67,7 +67,7 @@
         "number": 9,
         "club": "Real Madrid",
         "country": "Argentina/Spain",
-        "price": "210",
+        "price": "170",
         "role": "forward",
         "img": "photos/distefano.jpg"
     },
@@ -79,7 +79,7 @@
         "number": 13,
         "club": "Bayern Munich",
         "country": "Germany",
-        "price": "200",
+        "price": "160",
         "role": "forward",
         "img": "photos/muller.jpg"
     },
@@ -91,7 +91,7 @@
         "number": 9,
         "club": "AC Milan",
         "country": "Netherlands",
-        "price": "190",
+        "price": "150",
         "role": "forward",
         "img": "photos/vanbasten.jpg"
     },
@@ -103,7 +103,7 @@
         "number": 7,
         "club": "Manchester United",
         "country": "England",
-        "price": "150",
+        "price": "120",
         "role": "midfielder",
         "img": "photos/beckham.jpg"
     },
@@ -115,7 +115,7 @@
         "number": 10,
         "club": "Real Madrid",
         "country": "France",
-        "price": "220",
+        "price": "180",
         "role": "midfielder",
         "img": "photos/zidane.jpg"
     },
@@ -127,7 +127,7 @@
         "number": 14,
         "club": "Real Madrid",
         "country": "Spain",
-        "price": "100",
+        "price": "80",
         "role": "midfielder",
         "img": "photos/guti.jpg"
     },
@@ -139,7 +139,7 @@
         "number": 8,
         "club": "Real Madrid",
         "country": "Germany",
-        "price": "120",
+        "price": "100",
         "role": "midfielder",
         "img": "photos/kroos.jpg"
     },
@@ -151,7 +151,7 @@
         "number": 9,
         "club": "Napoli",
         "country": "Argentina",
-        "price": "80",
+        "price": "70",
         "role": "forward",
         "img": "photos/higuain.jpg"
     },
@@ -163,7 +163,7 @@
         "number": 7,
         "club": "Barcelona",
         "country": "Croatia",
-        "price": "90",
+        "price": "75",
         "role": "midfielder",
         "img": "photos/rakitic.jpg"
     },
@@ -175,7 +175,7 @@
         "number": 8,
         "club": "Barcelona",
         "country": "Spain",
-        "price": "160",
+        "price": "130",
         "role": "midfielder",
         "img": "photos/iniesta.jpg"
     },
@@ -187,7 +187,7 @@
         "number": 10,
         "club": "AC Milan",
         "country": "Sweden",
-        "price": "130",
+        "price": "110",
         "role": "forward",
         "img": "photos/ibrahimovic.jpg"
     },
@@ -199,7 +199,7 @@
         "number": 10,
         "club": "Real Madrid",
         "country": "Germany",
-        "price": "100",
+        "price": "85",
         "role": "midfielder",
         "img": "photos/ozil.jpg"
     },
@@ -211,7 +211,7 @@
         "number": 3,
         "club": "Barcelona",
         "country": "Spain",
-        "price": "90",
+        "price": "75",
         "role": "defender",
         "img": "photos/pique.jpg"
     },
@@ -223,7 +223,7 @@
         "number": 3,
         "club": "AC Milan",
         "country": "Italy",
-        "price": "200",
+        "price": "170",
         "role": "defender",
         "img": "photos/maldini.jpg"
     },
@@ -235,7 +235,7 @@
         "number": 1,
         "club": "Juventus",
         "country": "Italy",
-        "price": "150",
+        "price": "120",
         "role": "goalkeeper",
         "img": "photos/buffon.jpg"
     },
@@ -247,7 +247,7 @@
         "number": 14,
         "club": "Barcelona",
         "country": "Argentina",
-        "price": "80",
+        "price": "65",
         "role": "defender",
         "img": "photos/mascherano.jpg"
     },
@@ -259,7 +259,7 @@
         "number": 7,
         "club": "Barcelona",
         "country": "Spain",
-        "price": "100",
+        "price": "85",
         "role": "forward",
         "img": "photos/villa.jpg"
     },
@@ -271,7 +271,7 @@
         "number": 10,
         "club": "Manchester United",
         "country": "Argentina",
-        "price": "85",
+        "price": "75",
         "role": "forward",
         "img": "photos/tevez.jpg"
     },
@@ -283,7 +283,7 @@
         "number": 10,
         "club": "Barcelona",
         "country": "Brazil",
-        "price": "180",
+        "price": "150",
         "role": "forward",
         "img": "photos/ronaldinho.jpg"
     },
@@ -295,7 +295,7 @@
         "number": 9,
         "club": "Real Madrid",
         "country": "Brazil",
-        "price": "220",
+        "price": "185",
         "role": "forward",
         "img": "photos/ronaldo.jpg"
     },
@@ -307,7 +307,7 @@
         "number": 10,
         "club": "Real Madrid",
         "country": "Portugal",
-        "price": "140",
+        "price": "120",
         "role": "midfielder",
         "img": "photos/figo.jpg"
     },
@@ -319,7 +319,7 @@
         "number": 22,
         "club": "AC Milan",
         "country": "Brazil",
-        "price": "160",
+        "price": "130",
         "role": "midfielder",
         "img": "photos/kaka.jpg"
     },
@@ -331,7 +331,7 @@
         "number": 5,
         "club": "Juventus",
         "country": "Italy",
-        "price": "120",
+        "price": "100",
         "role": "defender",
         "img": "photos/cannavaro.jpg"
     },
@@ -343,7 +343,7 @@
         "number": 11,
         "club": "Juventus",
         "country": "Czech Republic",
-        "price": "110",
+        "price": "95",
         "role": "midfielder",
         "img": "photos/nedved.jpg"
     },
@@ -355,7 +355,7 @@
         "number": 1,
         "club": "Real Madrid",
         "country": "Spain",
-        "price": "140",
+        "price": "110",
         "role": "goalkeeper",
         "img": "photos/casillas.jpg"
     }
