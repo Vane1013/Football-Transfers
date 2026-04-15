@@ -92,6 +92,114 @@
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
+        
+        .retro-card {
+            background: linear-gradient(135deg, #f5f0e1 0%, #e8dcc8 100%);
+            border: 3px solid #d4af37;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+            position: relative;
+            overflow: hidden;
+            transition: all 0.4s ease;
+        }
+
+        .retro-card::before {
+            content: "★ LEGEND ★";
+            position: absolute;
+            top: 10px;
+            left: -35px;
+            background: linear-gradient(135deg, #d4af37, #ffd700);
+            color: #2c3e50;
+            font-size: 0.7rem;
+            font-weight: bold;
+            padding: 5px 40px;
+            transform: rotate(-45deg);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            z-index: 10;
+            letter-spacing: 2px;
+        }
+
+        .retro-card:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+            border-color: #ffd700;
+        }
+
+        .retro-card .card-img-container {
+            background: linear-gradient(135deg, #2c1810, #4a2c1a);
+            border-radius: 10px;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        .retro-card .card-title {
+            font-family: 'Georgia', serif;
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #8B4513;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+            letter-spacing: 1px;
+        }
+
+        .retro-card .player-info {
+            background: rgba(139, 69, 19, 0.1);
+            border-left: 4px solid #d4af37;
+            border-radius: 8px;
+        }
+
+        .retro-card .price-section {
+            background: linear-gradient(135deg, #d4af37, #ffd700);
+            border: none;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        .retro-card .price-section span {
+            color: #2c3e50 !important;
+            text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
+        }
+
+        .retro-card .legend-badge {
+            background: linear-gradient(135deg, #d4af37, #ffd700);
+            color: #2c3e50;
+            font-weight: bold;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .retro-card .btn-retro {
+            background: linear-gradient(135deg, #8B4513, #A0522D);
+            color: #ffd700;
+            border: none;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+
+        .retro-card .btn-retro:hover {
+            background: linear-gradient(135deg, #A0522D, #8B4513);
+            transform: scale(1.05);
+            color: #fff;
+        }
+
+        .retro-card .card-text {
+            color: #4a3728;
+            font-style: italic;
+            font-family: 'Georgia', serif;
+        }
+
+        /* Винтажный уголок */
+        .retro-card::after {
+            content: "⚽";
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            font-size: 2rem;
+            opacity: 0.1;
+            pointer-events: none;
+            font-family: monospace;
+        }
+        
     </style>
 </head>
 
@@ -134,7 +242,7 @@
                             <p class="mb-0">Current transfer budget and team statistics</p>
                         </div>
                         <div class="col-md-4 text-end">
-                            <div class="h1 mb-0">⭐ 103</div>
+                            <div class="h1 mb-0">⭐ 18</div>
                             <small>Available Stars</small>
                         </div>
                     </div>
@@ -145,7 +253,7 @@
                     <div class="col-md-3 mb-3">
                         <div class="card stats-card text-center h-100">
                             <div class="card-body">
-                                <h3 class="text-primary">13</h3>
+                                <h3 class="text-primary">14</h3>
                                 <p class="text-muted mb-0">Total Players</p>
                             </div>
                         </div>
@@ -153,7 +261,7 @@
                     <div class="col-md-3 mb-3">
                         <div class="card stats-card text-center h-100">
                             <div class="card-body">
-                                <h3 class="text-success">⭐ 788</h3>
+                                <h3 class="text-success">⭐ 873</h3>
                                 <p class="text-muted mb-0">Team Value</p>
                             </div>
                         </div>
@@ -589,7 +697,7 @@
                 <!-- Нападающие -->
                 <div class="row mt-5">
                     <div class="col-12">
-                        <h3 class="position-title">⚡ Forwards (3)</h3>
+                        <h3 class="position-title">⚡ Forwards (4)</h3>
                     </div>
                 </div>
 
@@ -699,6 +807,48 @@
                                     <div class="d-flex justify-content-between align-items-center">
                                         <span class="text-success fw-bold fs-5">⭐ 40</span>
                                         <span class="text-muted small">Purchase Price</span>
+                                    </div>
+                                </div>
+
+                                <div class="mt-auto">
+                                    <button class="btn btn-outline-secondary btn-sm w-100" disabled>
+                                        <i class="fas fa-check me-2"></i>In Your Team
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Карточка Торреса (РЕТРО СТИЛЬ) -->
+                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-4">
+                        <div class="card h-100 d-flex flex-column shadow-sm retro-card">
+                            <div class="card-img-container position-relative">
+                                <img class="card-img-top responsive-img mt-2" src="photos/torres_r.jpg"
+                                    alt="Fernando Torres" style="height: 200px; object-fit: contain;">
+                                <div class="position-absolute top-0 end-0 m-2">
+                                    <span class="badge legend-badge">
+                                        <i class="fas fa-crown me-1"></i>LEGEND
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Fernando Torres</h5>
+                                <div class="player-info mb-2">
+                                    <small class="text-muted d-block">
+                                        <i class="fas fa-shield-alt"></i> Atlético Madrid
+                                    </small>
+                                    <small class="text-muted d-block">
+                                        <i class="fas fa-flag"></i> Spain
+                                    </small>
+                                </div>
+                                <p class="card-text flex-grow-1">El Niño, Spanish top-scorer, World Cup and Euro winner,
+                                    Liverpool and Atlético legend</p>
+
+                                <div class="price-section mb-3">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="fw-bold fs-5">
+                                            <i class="fas fa-star text-warning"></i> ⭐ 85
+                                        </span>
+                                        <span class="small">Legend Value</span>
                                     </div>
                                 </div>
 
