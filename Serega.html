@@ -56,6 +56,148 @@
             transform: translateY(-5px);
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
         }
+        .coach-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border: 3px solid #ffd700;
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+        }
+
+        .coach-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 35px rgba(102, 126, 234, 0.5);
+        }
+
+        .coach-badge {
+            background: linear-gradient(135deg, #ffd700, #ffed4e);
+            color: #333;
+            font-weight: bold;
+            padding: 8px 15px;
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(255, 215, 0, 0.4);
+        }
+
+        .coach-card .card-body {
+            background: white;
+        }
+
+        .coach-title {
+            font-weight: 600;
+            font-size: 1.5rem;
+            margin-top: 2rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 3px solid #667eea;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .retro-card {
+            background: linear-gradient(135deg, #f5f0e1 0%, #e8dcc8 100%);
+            border: 3px solid #d4af37;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+            position: relative;
+            overflow: hidden;
+            transition: all 0.4s ease;
+        }
+
+        .retro-card::before {
+            content: "★ LEGEND ★";
+            position: absolute;
+            top: 10px;
+            left: -35px;
+            background: linear-gradient(135deg, #d4af37, #ffd700);
+            color: #2c3e50;
+            font-size: 0.7rem;
+            font-weight: bold;
+            padding: 5px 40px;
+            transform: rotate(-45deg);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            z-index: 10;
+            letter-spacing: 2px;
+        }
+
+        .retro-card:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+            border-color: #ffd700;
+        }
+
+        .retro-card .card-img-container {
+            background: linear-gradient(135deg, #2c1810, #4a2c1a);
+            border-radius: 10px;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        .retro-card .card-title {
+            font-family: 'Georgia', serif;
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #8B4513;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+            letter-spacing: 1px;
+        }
+
+        .retro-card .player-info {
+            background: rgba(139, 69, 19, 0.1);
+            border-left: 4px solid #d4af37;
+            border-radius: 8px;
+        }
+
+        .retro-card .price-section {
+            background: linear-gradient(135deg, #d4af37, #ffd700);
+            border: none;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        .retro-card .price-section span {
+            color: #2c3e50 !important;
+            text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
+        }
+
+        .retro-card .legend-badge {
+            background: linear-gradient(135deg, #d4af37, #ffd700);
+            color: #2c3e50;
+            font-weight: bold;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .retro-card .btn-retro {
+            background: linear-gradient(135deg, #8B4513, #A0522D);
+            color: #ffd700;
+            border: none;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+
+        .retro-card .btn-retro:hover {
+            background: linear-gradient(135deg, #A0522D, #8B4513);
+            transform: scale(1.05);
+            color: #fff;
+        }
+
+        .retro-card .card-text {
+            color: #4a3728;
+            font-style: italic;
+            font-family: 'Georgia', serif;
+        }
+
+        /* Винтажный уголок */
+        .retro-card::after {
+            content: "⚽";
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            font-size: 2rem;
+            opacity: 0.1;
+            pointer-events: none;
+            font-family: monospace;
+        }
     </style>
 </head>
 
