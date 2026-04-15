@@ -360,18 +360,6 @@
         "img": "photos/casillas.jpg"
     },
     {
-        "id": "r31",
-        "title": "Fernando Torres",
-        "vendor_code": "R031",
-        "description": "Spanish top-scorer in the centre, World Cup winner",
-        "number": 9,
-        "club": "Atlético Madrid",
-        "country": "Spain",
-        "price": "85",
-        "role": "forward",
-        "img": "photos/torres_r.jpg"
-    },
-    {
         "id": "r32",
         "title": "Raúl",
         "vendor_code": "R032",
