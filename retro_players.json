@@ -132,18 +132,6 @@
         "img": "photos/guti.jpg"
     },
     {
-        "id": "r12",
-        "title": "Toni Kroos",
-        "vendor_code": "R012",
-        "description": "German passing maestro, World Cup winner, Champions League legend",
-        "number": 8,
-        "club": "Real Madrid",
-        "country": "Germany",
-        "price": "100",
-        "role": "midfielder",
-        "img": "photos/kroos.jpg"
-    },
-    {
         "id": "r13",
         "title": "Gonzalo Higuaín",
         "vendor_code": "R013",
