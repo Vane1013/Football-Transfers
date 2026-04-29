@@ -178,6 +178,30 @@
         "price": "300",
         "role": "coach",
         "img": "photos/ferguson.png"
+    },
+    {
+        "id": "117",
+        "title": "Jürgen Klopp",
+        "vendor_code": "217",
+        "description": "Liverpool legend with strategy",
+        "number": 0,
+        "club": "RB Leipzig",
+        "country": "Germany",
+        "price": "300",
+        "role": "coach",
+        "img": "photos/klopp.png"
+    },
+    {
+        "id": "118",
+        "title": "Mickey Mouse",
+        "vendor_code": "218",
+        "description": "Mystery top-coach",
+        "number": 0,
+        "club": "Free Agent",
+        "country": "USA",
+        "price": "400",
+        "role": "coach",
+        "img": "photos/mickey.png"
     }
 ]
 
