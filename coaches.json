@@ -202,6 +202,54 @@
         "price": "400",
         "role": "coach",
         "img": "photos/mickey.png"
+    },
+    {
+        "id": "119",
+        "title": "Donald Duck",
+        "vendor_code": "219",
+        "description": "Another mysterious top-coach",
+        "number": 0,
+        "club": "Free Agent",
+        "country": "USA",
+        "price": "400",
+        "role": "coach",
+        "img": "photos/donald.png"
+    },
+     {
+        "id": "120",
+        "title": "Spider-Man",
+        "vendor_code": "220",
+        "description": "In one life - a superhero, in another life - a top-coach",
+        "number": 0,
+        "club": "Free Agent",
+        "country": "USA",
+        "price": "500",
+        "role": "coach",
+        "img": "photos/spiderman.png"
+    },
+    {
+        "id": "121",
+        "title": "Batman",
+        "vendor_code": "221",
+        "description": "At night he saves people, during the day he trains football players",
+        "number": 0,
+        "club": "Free Agent",
+        "country": "USA",
+        "price": "500",
+        "role": "coach",
+        "img": "photos/batman.png"
+    },
+    {
+        "id": "122",
+        "title": "Cinderella",
+        "vendor_code": "222",
+        "description": "A coach with magical tactics and magical boots. Comes complete with assistants - mice, a prince and the rest of the gang",
+        "number": 0,
+        "club": "Free Agent",
+        "country": "USA",
+        "price": "1",
+        "role": "coach",
+        "img": "photos/cinderella.png"
     }
 ]
 
