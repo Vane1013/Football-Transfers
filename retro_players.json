@@ -31,7 +31,7 @@
         "number": 5,
         "club": "Bayern Munich",
         "country": "Germany",
-        "price": "180",
+        "price": "100",
         "role": "defender",
         "img": "photos/beckenbauer.jpg"
     },
@@ -43,7 +43,7 @@
         "number": 14,
         "club": "Ajax",
         "country": "Netherlands",
-        "price": "190",
+        "price": "150",
         "role": "forward",
         "img": "photos/cruyff.jpg"
     },
@@ -55,7 +55,7 @@
         "number": 1,
         "club": "Dynamo Moscow",
         "country": "Russia",
-        "price": "160",
+        "price": "120",
         "role": "goalkeeper",
         "img": "photos/yashin.jpg"
     },
@@ -67,7 +67,7 @@
         "number": 9,
         "club": "Real Madrid",
         "country": "Argentina/Spain",
-        "price": "170",
+        "price": "120",
         "role": "forward",
         "img": "photos/distefano.jpg"
     },
@@ -79,7 +79,7 @@
         "number": 13,
         "club": "Bayern Munich",
         "country": "Germany",
-        "price": "160",
+        "price": "110",
         "role": "forward",
         "img": "photos/muller.jpg"
     },
@@ -91,7 +91,7 @@
         "number": 9,
         "club": "AC Milan",
         "country": "Netherlands",
-        "price": "150",
+        "price": "90",
         "role": "forward",
         "img": "photos/vanbasten.jpg"
     },
@@ -115,7 +115,7 @@
         "number": 21,
         "club": "AC Milan",
         "country": "Italy",
-        "price": "180",
+        "price": "130",
         "role": "midfielder",
         "img": "photos/pirlo.jpg"
     },
@@ -211,7 +211,7 @@
         "number": 3,
         "club": "AC Milan",
         "country": "Italy",
-        "price": "170",
+        "price": "100",
         "role": "defender",
         "img": "photos/maldini.jpg"
     },
@@ -283,7 +283,7 @@
         "number": 9,
         "club": "Real Madrid",
         "country": "Brazil",
-        "price": "185",
+        "price": "160",
         "role": "forward",
         "img": "photos/ronaldo.jpg"
     },
@@ -331,7 +331,7 @@
         "number": 11,
         "club": "Juventus",
         "country": "Czech Republic",
-        "price": "95",
+        "price": "85",
         "role": "midfielder",
         "img": "photos/nedved.jpg"
     },
