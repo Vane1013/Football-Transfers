@@ -36,18 +36,6 @@
         "img": "photos/beckenbauer.jpg"
     },
     {
-        "id": "r4",
-        "title": "Johan Cruyff",
-        "vendor_code": "R004",
-        "description": "Total Football pioneer, three-time Ballon d'Or winner",
-        "number": 14,
-        "club": "Ajax",
-        "country": "Netherlands",
-        "price": "150",
-        "role": "forward",
-        "img": "photos/cruyff.jpg"
-    },
-    {
         "id": "r5",
         "title": "Lev Yashin",
         "vendor_code": "R005",
@@ -142,18 +130,6 @@
         "price": "70",
         "role": "forward",
         "img": "photos/higuain.jpg"
-    },
-    {
-        "id": "r14",
-        "title": "Ivan Rakitić",
-        "vendor_code": "R014",
-        "description": "Croatian midfield general, Champions League winner",
-        "number": 7,
-        "club": "Barcelona",
-        "country": "Croatia",
-        "price": "65",
-        "role": "midfielder",
-        "img": "photos/rakitic.jpg"
     },
     {
         "id": "r15",
