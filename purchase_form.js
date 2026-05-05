@@ -253,30 +253,3 @@ function closeSuccessMessage() {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
