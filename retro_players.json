@@ -180,18 +180,6 @@
         "img": "photos/pique.jpg"
     },
     {
-        "id": "r19",
-        "title": "Paolo Maldini",
-        "vendor_code": "R019",
-        "description": "Greatest defender of all time, AC Milan legend",
-        "number": 3,
-        "club": "AC Milan",
-        "country": "Italy",
-        "price": "95",
-        "role": "defender",
-        "img": "photos/maldini.jpg"
-    },
-    {
         "id": "r20",
         "title": "Gianluigi Buffon",
         "vendor_code": "R020",
