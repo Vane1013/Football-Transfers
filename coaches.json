@@ -180,6 +180,18 @@
         "img": "photos/klopp.png"
     },
      {
+        "id": "119",
+        "title": "Donald Duck",
+        "vendor_code": "219",
+        "description": "Another mysterious top-coach",
+        "number": 0,
+        "club": "Free Agent",
+        "country": "USA",
+        "price": "400",
+        "role": "coach",
+        "img": "photos/donald.png"
+    },
+     {
         "id": "120",
         "title": "Spider-Man",
         "vendor_code": "220",
