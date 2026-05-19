@@ -11,7 +11,7 @@ const managers = {
         name: 'Serega', 
         email: 'serega@football.com',
         license: 'FIFA-AGENT-002',
-        budget: 368,
+        budget: 200,
         welcomeShown: false  // Флаг для отслеживания показа приветствия
     }
 };
