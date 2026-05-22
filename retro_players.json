@@ -84,18 +84,6 @@
         "img": "photos/vanbasten.jpg"
     },
     {
-        "id": "r9",
-        "title": "David Beckham",
-        "vendor_code": "R009",
-        "description": "Iconic midfielder, free-kick specialist, global football icon",
-        "number": 7,
-        "club": "Manchester United",
-        "country": "England",
-        "price": "120",
-        "role": "midfielder",
-        "img": "photos/beckham.jpg"
-    },
-    {
         "id": "r10",
         "title": "Andrea Pirlo",
         "vendor_code": "R010",
