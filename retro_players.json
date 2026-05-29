@@ -144,18 +144,6 @@
         "img": "photos/ibrahimovic.jpg"
     },
     {
-        "id": "r17",
-        "title": "Mesut Özil",
-        "vendor_code": "R017",
-        "description": "German playmaker, assist king, World Cup winner",
-        "number": 10,
-        "club": "Real Madrid",
-        "country": "Germany",
-        "price": "85",
-        "role": "midfielder",
-        "img": "photos/ozil.jpg"
-    },
-    {
         "id": "r18",
         "title": "Gerard Piqué",
         "vendor_code": "R018",
