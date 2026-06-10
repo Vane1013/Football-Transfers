@@ -12,18 +12,6 @@
         "img": "photos/pele.jpg"
     },
     {
-        "id": "r2",
-        "title": "Diego Maradona",
-        "vendor_code": "R002",
-        "description": "Argentine genius, led Argentina to World Cup glory in 1986",
-        "number": 10,
-        "club": "Napoli",
-        "country": "Argentina",
-        "price": "200",
-        "role": "forward",
-        "img": "photos/maradona.jpg"
-    },
-    {
         "id": "r5",
         "title": "Lev Yashin",
         "vendor_code": "R005",
@@ -202,18 +190,6 @@
         "price": "150",
         "role": "forward",
         "img": "photos/ronaldo.jpg"
-    },
-    {
-        "id": "r26",
-        "title": "Luís Figo",
-        "vendor_code": "R026",
-        "description": "Portuguese winger, Ballon d'Or winner",
-        "number": 10,
-        "club": "Real Madrid",
-        "country": "Portugal",
-        "price": "120",
-        "role": "midfielder",
-        "img": "photos/figo.jpg"
     },
     {
         "id": "r27",
