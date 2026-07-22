@@ -1,17 +1,5 @@
 [
     {
-        "id": "2",
-        "title": "Vozinha",
-        "vendor_code": "102",
-        "description": "Legendary goalkeeper, WC-2026 legend",
-        "number": 1,
-        "club": "Free Agent",
-        "country": "Cabo Verde",
-        "price": "50",
-        "role": "goalkeeper",
-        "img": "photos/vozinha.png"
-    },
-    {
         "id": "3",
         "title": "Kylian Mbappé",
         "vendor_code": "103",
