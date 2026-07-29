@@ -216,18 +216,6 @@
         "img": "photos/nedved.jpg"
     },
     {
-        "id": "r30",
-        "title": "Iker Casillas",
-        "vendor_code": "R030",
-        "description": "San Iker, legendary Spanish goalkeeper, World Cup winner",
-        "number": 1,
-        "club": "Real Madrid",
-        "country": "Spain",
-        "price": "110",
-        "role": "goalkeeper",
-        "img": "photos/casillas.jpg"
-    },
-    {
         "id": "r32",
         "title": "Raúl",
         "vendor_code": "R032",
