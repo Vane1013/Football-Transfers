@@ -696,18 +696,6 @@
         "img": "photos/baena.png"
     },
     {
-        "id": "73",
-        "title": "Ferran Torres",
-        "vendor_code": "173",
-        "description": "Spanish forward with amazing skills",
-        "number": 7,
-        "club": "Barcelona",
-        "country": "Spain",
-        "price": "50",
-        "role": "forward",
-        "img": "photos/torres.png"
-    },
-    {
         "id": "74",
         "title": "Pau Cubarsí",
         "vendor_code": "174",
