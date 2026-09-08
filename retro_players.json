@@ -108,18 +108,6 @@
         "img": "photos/iniesta.jpg"
     },
     {
-        "id": "r16",
-        "title": "Zlatan Ibrahimović",
-        "vendor_code": "R016",
-        "description": "Swedish superstar, known for incredible goals and personality",
-        "number": 10,
-        "club": "AC Milan",
-        "country": "Sweden",
-        "price": "110",
-        "role": "forward",
-        "img": "photos/ibrahimovic.jpg"
-    },
-    {
         "id": "r18",
         "title": "Gerard Piqué",
         "vendor_code": "R018",
