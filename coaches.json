@@ -48,18 +48,6 @@
         "img": "photos/flick.png"
     },
     {
-        "id": "106",
-        "title": "José Mourinho",
-        "vendor_code": "206",
-        "description": "The Special One, won Champions League with multiple clubs",
-        "number": 0,
-        "club": "Benfica",
-        "country": "Portugal",
-        "price": "290",
-        "role": "coach",
-        "img": "photos/mourinho.png"
-    },
-    {
         "id": "107",
         "title": "Pep Guardiola",
         "vendor_code": "207",
