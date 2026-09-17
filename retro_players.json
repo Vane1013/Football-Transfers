@@ -60,18 +60,6 @@
         "img": "photos/vanbasten.jpg"
     },
     {
-        "id": "r10",
-        "title": "Andrea Pirlo",
-        "vendor_code": "R010",
-        "description": "Italian maestro, legendary technique, World Cup winner",
-        "number": 21,
-        "club": "AC Milan",
-        "country": "Italy",
-        "price": "90",
-        "role": "midfielder",
-        "img": "photos/pirlo.jpg"
-    },
-    {
         "id": "r11",
         "title": "Guti",
         "vendor_code": "R011",
