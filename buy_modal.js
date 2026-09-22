@@ -44,24 +44,24 @@ function closeBuyModal() {
     }
 }
 
-// Универсальный обработчик для всех .buy-btn
+// Единый обработчик для всех кнопок .buy-btn
 document.addEventListener('click', function(e) {
     const btn = e.target.closest('.buy-btn');
     if (!btn) return;
 
-    // Останавливаем отправку формы (если где-то осталась)
+    // Блокируем любую отправку формы / переход
     e.preventDefault();
     e.stopPropagation();
+    e.stopImmediatePropagation();
 
-    // Тип предмета по URL
     const path = window.location.pathname.toLowerCase();
     let itemType = 'player';
-    if (path.includes('coaches'))   itemType = 'coach';
-    else if (path.includes('retro')) itemType = 'legend player';
-    else if (path.includes('stadiums')) itemType = 'stadium';
+    if (path.includes('coaches'))        itemType = 'coach';
+    else if (path.includes('retro'))     itemType = 'legend player';
+    else if (path.includes('stadiums'))  itemType = 'stadium';
 
     const playerName  = btn.getAttribute('data-player-name');
     const playerPrice = btn.getAttribute('data-player-price');
 
     showBuyModal(playerName, playerPrice, itemType);
-});
+}, true);   // ← ВАЖНО: третий параметр true = фаза перехвата (capture)
