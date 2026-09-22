@@ -84,18 +84,6 @@
         "img": "photos/higuain.jpg"
     },
     {
-        "id": "r15",
-        "title": "Andrés Iniesta",
-        "vendor_code": "R015",
-        "description": "Spanish magician, World Cup final hero, midfield artist",
-        "number": 8,
-        "club": "Barcelona",
-        "country": "Spain",
-        "price": "130",
-        "role": "midfielder",
-        "img": "photos/iniesta.jpg"
-    },
-    {
         "id": "r18",
         "title": "Gerard Piqué",
         "vendor_code": "R018",
