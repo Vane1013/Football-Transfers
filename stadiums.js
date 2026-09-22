@@ -65,5 +65,6 @@ async function getResponce() {
     });
 
     node_for_insert.appendChild(stadiumContainer);
+}
 
 getResponce();
