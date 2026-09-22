@@ -11,7 +11,7 @@ function showBuyModal(itemName, itemPrice, itemType = 'player') {
         modal.innerHTML = `
             <div class="buy-modal-content">
                 <div class="buy-modal-img-wrapper">
-                    <img src="photos/mourinho.png" alt="José Mourinho" class="buy-modal-img">
+                    <img src="photos/king.jpg" alt="José Mourinho" class="buy-modal-img">
                 </div>
                 <h3 class="buy-modal-title">Transfer Request Sent!</h3>
                 <p class="buy-modal-text"></p>
