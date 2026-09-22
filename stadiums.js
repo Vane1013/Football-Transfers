@@ -66,31 +66,4 @@ async function getResponce() {
 
     node_for_insert.appendChild(stadiumContainer);
 
-    // Добавляем обработчики событий для кнопок покупки
-    addBuyButtonListeners();
-}
-
-function addBuyButtonListeners() {
-    document.addEventListener('click', function(e) {
-        if (e.target.classList.contains('buy-btn') || e.target.closest('.buy-btn')) {
-            const button = e.target.classList.contains('buy-btn') ? e.target : e.target.closest('.buy-btn');
-            const playerId = button.getAttribute('data-player-id');
-            const playerName = button.getAttribute('data-player-name');
-            const playerPrice = button.getAttribute('data-player-price');
-            const playerNumber = button.getAttribute('data-player-number');
-            const playerClub = button.getAttribute('data-player-club');
-            
-            localStorage.setItem('selectedPlayer', JSON.stringify({
-                id: playerId,
-                name: playerName,
-                price: playerPrice,
-                number: playerNumber,
-                club: playerClub
-            }));
-            
-            window.location.href = 'purchase_form.html';
-        }
-    });
-}
-
 getResponce();
