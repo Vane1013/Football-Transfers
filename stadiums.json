@@ -7,7 +7,7 @@
         "number": 1,
         "club": "Real Madrid",
         "country": "Spain",
-        "price": "150",
+        "price": "800",
         "role": "stadium",
         "img": "photos/bernabeu.jpg"
     },
@@ -19,7 +19,7 @@
         "number": 2,
         "club": "Barcelona",
         "country": "Spain",
-        "price": "140",
+        "price": "800",
         "role": "stadium",
         "img": "photos/campnou.jpg"
     },
@@ -31,7 +31,7 @@
         "number": 3,
         "club": "Manchester United",
         "country": "England",
-        "price": "130",
+        "price": "780",
         "role": "stadium",
         "img": "photos/oldtrafford.jpg"
     },
@@ -43,7 +43,7 @@
         "number": 4,
         "club": "Liverpool",
         "country": "England",
-        "price": "125",
+        "price": "725",
         "role": "stadium",
         "img": "photos/anfield.jpg"
     },
@@ -55,7 +55,7 @@
         "number": 5,
         "club": "AC Milan & Inter",
         "country": "Italy",
-        "price": "120",
+        "price": "620",
         "role": "stadium",
         "img": "photos/sansiro.jpg"
     },
@@ -67,7 +67,7 @@
         "number": 6,
         "club": "Bayern Munich",
         "country": "Germany",
-        "price": "135",
+        "price": "660",
         "role": "stadium",
         "img": "photos/allianz.jpg"
     },
@@ -79,7 +79,7 @@
         "number": 7,
         "club": "Borussia Dortmund",
         "country": "Germany",
-        "price": "110",
+        "price": "600",
         "role": "stadium",
         "img": "photos/signal.jpg"
     },
@@ -91,7 +91,7 @@
         "number": 8,
         "club": "Paris Saint-Germain",
         "country": "France",
-        "price": "105",
+        "price": "580",
         "role": "stadium",
         "img": "photos/parcdesprinces.jpg"
     },
@@ -103,7 +103,7 @@
         "number": 9,
         "club": "Flamengo & Fluminense",
         "country": "Brazil",
-        "price": "145",
+        "price": "575",
         "role": "stadium",
         "img": "photos/maracana.jpg"
     },
@@ -115,7 +115,7 @@
         "number": 10,
         "club": "England National Team",
         "country": "England",
-        "price": "140",
+        "price": "770",
         "role": "stadium",
         "img": "photos/wembley.jpg"
     },
@@ -127,7 +127,7 @@
         "number": 11,
         "club": "Boca Juniors",
         "country": "Argentina",
-        "price": "100",
+        "price": "550",
         "role": "stadium",
         "img": "photos/labombonera.jpg"
     },
@@ -139,7 +139,7 @@
         "number": 12,
         "club": "Benfica",
         "country": "Portugal",
-        "price": "95",
+        "price": "500",
         "role": "stadium",
         "img": "photos/luz.jpg"
     },
@@ -151,7 +151,7 @@
         "number": 13,
         "club": "Ajax",
         "country": "Netherlands",
-        "price": "90",
+        "price": "520",
         "role": "stadium",
         "img": "photos/cruyffarena.jpg"
     },
@@ -163,7 +163,7 @@
         "number": 14,
         "club": "Zenit",
         "country": "Russia",
-        "price": "85",
+        "price": "510",
         "role": "stadium",
         "img": "photos/gazprom.jpg"
     },
@@ -175,7 +175,7 @@
         "number": 15,
         "club": "Manchester City",
         "country": "England",
-        "price": "115",
+        "price": "640",
         "role": "stadium",
         "img": "photos/etihad.jpg"
     },
@@ -187,7 +187,7 @@
         "number": 16,
         "club": "Villareal",
         "country": "Spain",
-        "price": "85",
+        "price": "500",
         "role": "stadium",
         "img": "photos/ceramica.jpg"
     }
