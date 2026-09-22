@@ -94,5 +94,16 @@ async function getResponce() {
             node_for_insert.appendChild(positionContainer);
         }
     }
+}
+
+function getPositionTitle(position) {
+    const titles = {
+        'goalkeeper': '⚽ Goalkeepers',
+        'defender': '🛡️ Defenders',
+        'midfielder': '🎯 Midfielders',
+        'forward': '⚡ Forwards'
+    };
+    return titles[position] || position;
+}
 
 getResponce();
