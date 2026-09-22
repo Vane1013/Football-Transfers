@@ -178,5 +178,17 @@
         "price": "115",
         "role": "stadium",
         "img": "photos/etihad.jpg"
+    },
+    {
+        "id": "s16",
+        "title": "Estadio la Ceramica",
+        "vendor_code": "ST016",
+        "description": "Home of Villareal, bright and big arena",
+        "number": 16,
+        "club": "Villareal",
+        "country": "Spain",
+        "price": "70",
+        "role": "stadium",
+        "img": "photos/ceramica.jpg"
     }
 ]
