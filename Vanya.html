@@ -198,6 +198,105 @@
             pointer-events: none;
             font-family: monospace;
         }
+                .stadium-card {
+            background: linear-gradient(135deg, #e0f7fa 0%, #b2ebf2 100%);
+            border: 3px solid #00838f;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0, 131, 143, 0.2);
+            transition: all 0.4s ease;
+        }
+
+        .stadium-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 30px rgba(0, 131, 143, 0.4);
+            border-color: #00bcd4;
+        }
+
+        .stadium-card .card-title {
+            font-family: 'Georgia', serif;
+            font-weight: bold;
+            color: #006064;
+            letter-spacing: 0.5px;
+        }
+
+        .stadium-card .player-info {
+            background: rgba(0, 131, 143, 0.1);
+            border-left: 4px solid #00838f;
+            border-radius: 8px;
+        }
+
+        .stadium-card .price-section {
+            background: linear-gradient(135deg, #00838f, #00bcd4);
+            border-radius: 8px;
+            padding: 10px;
+        }
+
+        .stadium-card .price-section span {
+            color: #ffffff !important;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        .stadium-badge {
+            background: linear-gradient(135deg, #00838f, #00bcd4);
+            color: white;
+            font-weight: bold;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .stadium-title {
+            font-weight: 600;
+            font-size: 1.5rem;
+            margin-top: 2rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 3px solid #00838f;
+            background: linear-gradient(135deg, #00838f 0%, #00bcd4 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .empty-stadium-slot {
+            background: linear-gradient(135deg, #f0f8f9 0%, #e0f2f3 100%);
+            border: 3px dashed #00838f;
+            border-radius: 15px;
+            height: 100%;
+            min-height: 320px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .empty-stadium-slot:hover {
+            background: linear-gradient(135deg, #e0f7fa 0%, #b2ebf2 100%);
+            border-color: #00bcd4;
+            transform: translateY(-3px);
+        }
+
+        .empty-stadium-slot .empty-icon {
+            font-size: 3.5rem;
+            color: #00838f;
+            opacity: 0.5;
+            margin-bottom: 15px;
+        }
+
+        .empty-stadium-slot h6 {
+            color: #006064;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        .empty-stadium-slot p {
+            color: #6c757d;
+            font-size: 0.9rem;
+            margin: 0;
+        }
     </style>
 </head>
 
@@ -1005,6 +1104,60 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Стадионы Vanya -->
+                <div class="row mt-5">
+                    <div class="col-12">
+                        <h3 class="stadium-title">🏟️ My Stadiums (0)</h3>
+                    </div>
+                </div>
+
+                <!-- 4 пустых окошечка для будущих стадионов -->
+                <div class="row mb-4">
+                    <!-- Слот 1 -->
+                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-4">
+                        <div class="empty-stadium-slot">
+                            <div class="empty-icon">
+                                <i class="fas fa-landmark"></i>
+                            </div>
+                            <h6>Stadium Slot #1</h6>
+                            <p>Buy your first stadium!</p>
+                        </div>
+                    </div>
+
+                    <!-- Слот 2 -->
+                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-4">
+                        <div class="empty-stadium-slot">
+                            <div class="empty-icon">
+                                <i class="fas fa-landmark"></i>
+                            </div>
+                            <h6>Stadium Slot #2</h6>
+                            <p>Empty slot</p>
+                        </div>
+                    </div>
+
+                    <!-- Слот 3 -->
+                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-4">
+                        <div class="empty-stadium-slot">
+                            <div class="empty-icon">
+                                <i class="fas fa-landmark"></i>
+                            </div>
+                            <h6>Stadium Slot #3</h6>
+                            <p>Empty slot</p>
+                        </div>
+                    </div>
+
+                    <!-- Слот 4 -->
+                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-4">
+                        <div class="empty-stadium-slot">
+                            <div class="empty-icon">
+                                <i class="fas fa-landmark"></i>
+                            </div>
+                            <h6>Stadium Slot #4</h6>
+                            <p>Empty slot</p>
+                        </div>
+                    </div>
+                </div>
             <!--окончание уникального содержания страницы-->
         </div>
 
