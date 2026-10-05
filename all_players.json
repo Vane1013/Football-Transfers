@@ -708,18 +708,6 @@
         "img": "photos/sommer.png"
     },
     {
-        "id": "74",
-        "title": "Pau Cubarsí",
-        "vendor_code": "174",
-        "description": "Spanish central defender with amazing skills",
-        "number": 5,
-        "club": "Barcelona",
-        "country": "Spain",
-        "price": "35",
-        "role": "defender",
-        "img": "photos/cubarsi.png"
-    },
-    {
         "id": "75",
         "title": "Mike Maignan",
         "vendor_code": "175",
