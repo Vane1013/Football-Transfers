@@ -7,9 +7,9 @@
         "number": 10,
         "club": "PSG",
         "country": "France",
-        "price": "500",
+        "price": "300",
         "role": "collection",
-        "img": "photos/mbappe_dictator.jpg"
+        "img": "photos/dictator.jpg"
     },
     {
         "id": "c2",
@@ -19,9 +19,9 @@
         "number": 7,
         "club": "Al-Nassr",
         "country": "Portugal",
-        "price": "550",
+        "price": "250",
         "role": "collection",
-        "img": "photos/ronaldo_homelander.jpg"
+        "img": "photos/homelander.jpg"
     },
     {
         "id": "c3",
@@ -31,9 +31,9 @@
         "number": 10,
         "club": "Inter Miami",
         "country": "Argentina",
-        "price": "600",
+        "price": "250",
         "role": "collection",
-        "img": "photos/messi_king.jpg"
+        "img": "photos/kingmessi.jpg"
     },
     {
         "id": "c4",
@@ -43,21 +43,21 @@
         "number": 9,
         "club": "Manchester City",
         "country": "Norway",
-        "price": "520",
+        "price": "300",
         "role": "collection",
-        "img": "photos/haaland_viking.jpg"
+        "img": "photos/viking.jpg"
     },
     {
         "id": "c5",
         "title": "Count Suárez",
         "vendor_code": "CC005",
-        "description": "The vampire striker, feasting on defenders' mistakes with a deadly bite",
+        "description": "The vampire striker, feasting on defenders' mistakes with a deadly bite (but don't worry, he is kind, he won't touch you)",
         "number": 9,
         "club": "Inter Miami",
         "country": "Uruguay",
-        "price": "450",
+        "price": "100",
         "role": "collection",
-        "img": "photos/suarez_dracula.jpg"
+        "img": "photos/dracula.jpg"
     },
     {
         "id": "c6",
@@ -65,11 +65,11 @@
         "vendor_code": "CC006",
         "description": "Ancient elven mage, weaving magic passes with grace and wisdom of ages",
         "number": 10,
-        "club": "Real Madrid",
+        "club": "AC Milan",
         "country": "Croatia",
-        "price": "480",
+        "price": "200",
         "role": "collection",
-        "img": "photos/modric_elf.jpg"
+        "img": "photos/lukaelf.png"
     },
     {
         "id": "c7",
@@ -79,9 +79,9 @@
         "number": 4,
         "club": "Free Agent",
         "country": "Spain",
-        "price": "400",
+        "price": "100",
         "role": "collection",
-        "img": "photos/ramos_sketch.jpg"
+        "img": "photos/drawnramos.png"
     },
     {
         "id": "c8",
@@ -89,10 +89,10 @@
         "vendor_code": "CC008",
         "description": "The Special One as a fantasy villain, mastermind of football's darkest tactics",
         "number": 1,
-        "club": "Free Agent",
+        "club": "Real Madrid",
         "country": "Portugal",
-        "price": "700",
+        "price": "400",
         "role": "collection",
-        "img": "photos/mourinho_villain.jpg"
+        "img": "photos/villain.jpg"
     }
 ]
