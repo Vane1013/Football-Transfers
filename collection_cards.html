@@ -10,163 +10,187 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         .collection-section {
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
-            color: white;
-            border-radius: 10px;
-            padding: 20px;
-            margin: 20px 0;
-            border: 2px solid #e94560;
-        }
-        .collection-icon {
-            color: #e94560;
-            margin-right: 5px;
-        }
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    border: 2px solid #e94560;
+}
 
-        /* Карточки коллекционные — эффект фольги */
-        .collection-card {
-            background: linear-gradient(135deg, #2c003e 0%, #1a0033 50%, #0d001a 100%);
-            border: 3px solid #e94560;
-            border-radius: 15px;
-            box-shadow: 0 8px 25px rgba(233, 69, 96, 0.4);
-            position: relative;
-            overflow: hidden;
-            transition: all 0.4s ease;
-        }
+.collection-icon {
+    color: #e94560;
+    margin-right: 5px;
+}
 
-        /* Радужный блеск */
-        .collection-card::before {
-            content: "";
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: linear-gradient(
-                45deg,
-                transparent 30%,
-                rgba(255, 215, 0, 0.15) 45%,
-                rgba(233, 69, 96, 0.25) 50%,
-                rgba(0, 191, 255, 0.15) 55%,
-                transparent 70%
-            );
-            transform: rotate(25deg);
-            pointer-events: none;
-            z-index: 1;
-            animation: shine 6s infinite linear;
-        }
+/* Коллекционные карточки — без тяжёлых анимаций */
+.collection-card {
+    background: linear-gradient(135deg, #2c003e 0%, #1a0033 100%);
+    border: 3px solid #e94560;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(233, 69, 96, 0.4);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
 
-        @keyframes shine {
-            0% { transform: translateX(-100%) translateY(-100%) rotate(25deg); }
-            100% { transform: translateX(100%) translateY(100%) rotate(25deg); }
-        }
+.collection-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(233, 69, 96, 0.7);
+    border-color: #ffd700;
+}
 
-        .collection-card:hover {
-            transform: translateY(-10px) scale(1.03);
-            box-shadow: 0 20px 40px rgba(233, 69, 96, 0.7);
-            border-color: #ffd700;
-        }
+.collection-card .card-img-container {
+    background: #1a0033;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+}
 
-        .collection-card .card-img-container {
-            background: radial-gradient(circle, #4a0058 0%, #1a0033 100%);
-            border-radius: 10px;
-            margin: 10px;
-            padding: 10px;
-            position: relative;
-            z-index: 2;
-        }
+.collection-card .card-title {
+    font-family: 'Georgia', serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ffd700;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.9);
+}
 
-        .collection-card .card-title {
-            font-family: 'Georgia', serif;
-            font-size: 1.3rem;
-            font-weight: bold;
-            color: #ffd700;
-            text-shadow: 0 0 10px rgba(255, 215, 0, 0.8), 2px 2px 4px rgba(0, 0, 0, 0.9);
-            letter-spacing: 1px;
-            position: relative;
-            z-index: 2;
-        }
+.collection-card .player-info {
+    background: rgba(233, 69, 96, 0.15);
+    border-left: 4px solid #e94560;
+    border-radius: 8px;
+    padding-left: 8px;
+}
 
-        .collection-card .player-info {
-            background: rgba(233, 69, 96, 0.15);
-            border-left: 4px solid #e94560;
-            border-radius: 8px;
-            padding-left: 8px;
-            position: relative;
-            z-index: 2;
-        }
+.collection-card .player-info small {
+    color: #c0c0d0 !important;
+}
 
-        .collection-card .player-info small {
-            color: #c0c0d0 !important;
-        }
+.collection-card .card-text {
+    color: #b8b8d0;
+    font-style: italic;
+    font-family: 'Georgia', serif;
+}
 
-        .collection-card .card-text {
-            color: #b8b8d0;
-            font-style: italic;
-            font-family: 'Georgia', serif;
-            position: relative;
-            z-index: 2;
-        }
+.collection-card .price-section {
+    background: linear-gradient(135deg, #e94560, #ffd700);
+    border-radius: 8px;
+    padding: 10px;
+}
 
-        .collection-card .price-section {
-            background: linear-gradient(135deg, #e94560, #ffd700);
-            border-radius: 8px;
-            padding: 10px;
-            position: relative;
-            z-index: 2;
-        }
+.collection-card .price-section span {
+    color: #1a1a2e !important;
+    font-weight: bold;
+}
 
-        .collection-card .price-section span {
-            color: #1a1a2e !important;
-            text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.6);
-            font-weight: bold;
-        }
+.collection-badge {
+    background: linear-gradient(135deg, #e94560, #ffd700);
+    color: #1a1a2e;
+    font-weight: bold;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+}
 
-        .collection-badge {
-            background: linear-gradient(135deg, #e94560, #ffd700);
-            color: #1a1a2e;
-            font-weight: bold;
-            padding: 5px 12px;
-            border-radius: 20px;
-            font-size: 0.75rem;
-            box-shadow: 0 2px 8px rgba(233, 69, 96, 0.6);
-            letter-spacing: 1px;
-            position: relative;
-            z-index: 2;
-        }
+.collection-card .btn-collection {
+    background: linear-gradient(135deg, #e94560, #8b1a3a);
+    color: #ffd700;
+    border: none;
+    font-weight: bold;
+    transition: background 0.2s ease;
+}
 
-        /* Кнопка покупки — тёмная магия */
-        .collection-card .btn-collection {
-            background: linear-gradient(135deg, #e94560, #8b1a3a);
-            color: #ffd700;
-            border: none;
-            font-weight: bold;
-            font-family: 'Georgia', serif;
-            letter-spacing: 1px;
-            transition: all 0.3s;
-            position: relative;
-            z-index: 2;
-        }
+.collection-card .btn-collection:hover {
+    background: linear-gradient(135deg, #ffd700, #e94560);
+    color: #1a1a2e;
+}
 
-        .collection-card .btn-collection:hover {
-            background: linear-gradient(135deg, #ffd700, #e94560);
-            color: #1a1a2e;
-            transform: scale(1.05);
-            box-shadow: 0 5px 15px rgba(255, 215, 0, 0.6);
-        }
+/* === МОДАЛКА — упрощённая и лёгкая === */
+.buy-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease;
+    padding: 20px;
+}
 
-        /* Уголки-магические символы */
-        .collection-card::after {
-            content: "✦";
-            position: absolute;
-            bottom: 10px;
-            right: 10px;
-            font-size: 2rem;
-            color: #ffd700;
-            opacity: 0.3;
-            pointer-events: none;
-            font-family: monospace;
-            z-index: 1;
-        }
+.buy-modal-overlay.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.buy-modal-content {
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    max-width: 450px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+    border: 3px solid #6a11cb;
+}
+
+.buy-modal-img-wrapper {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    background: #6a11cb;
+    overflow: hidden;
+    border: 4px solid #ffd700;
+}
+
+.buy-modal-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.buy-modal-title {
+    color: #6a11cb;
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.buy-modal-text {
+    color: #2c3e50;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.buy-modal-message {
+    color: #6c757d;
+    font-size: 1rem;
+    margin-bottom: 25px;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    border-left: 4px solid #6a11cb;
+}
+
+.buy-modal-btn {
+    background: #6a11cb;
+    color: white;
+    border: none;
+    padding: 12px 35px;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.buy-modal-btn:hover {
+    background: #4c0d99;
+}
     </style>
 </head>
 
