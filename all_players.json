@@ -1,17 +1,5 @@
 [
     {
-        "id": "3",
-        "title": "Kylian Mbappé",
-        "vendor_code": "103",
-        "description": "Young French forward, 2018 World Cup champion",
-        "number": 10,
-        "club": "Real Madrid",
-        "country": "France",
-        "price": "180",
-        "role": "forward",
-        "img": "photos/mbappe.png"
-    },
-    {
         "id": "5",
         "title": "Erling Haaland",
         "vendor_code": "105",
