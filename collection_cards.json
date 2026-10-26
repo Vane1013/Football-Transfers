@@ -1,0 +1,98 @@
+[
+    {
+        "id": "c1",
+        "title": "Dictator Mbappé",
+        "vendor_code": "CC001",
+        "description": "Supreme ruler of the pitch, commanding absolute power with every touch of the ball",
+        "number": 10,
+        "club": "PSG",
+        "country": "France",
+        "price": "500",
+        "role": "collection",
+        "img": "photos/mbappe_dictator.jpg"
+    },
+    {
+        "id": "c2",
+        "title": "Homelander Ronaldo",
+        "vendor_code": "CC002",
+        "description": "The ultimate superhero, invincible on the field and feared by every defender",
+        "number": 7,
+        "club": "Al-Nassr",
+        "country": "Portugal",
+        "price": "550",
+        "role": "collection",
+        "img": "photos/ronaldo_homelander.jpg"
+    },
+    {
+        "id": "c3",
+        "title": "King Messi",
+        "vendor_code": "CC003",
+        "description": "The undisputed monarch of football, crowned with 8 Ballon d'Or jewels",
+        "number": 10,
+        "club": "Inter Miami",
+        "country": "Argentina",
+        "price": "600",
+        "role": "collection",
+        "img": "photos/messi_king.jpg"
+    },
+    {
+        "id": "c4",
+        "title": "Viking Haaland",
+        "vendor_code": "CC004",
+        "description": "The Nordic warrior, a ruthless goal-scoring machine from the cold northern lands",
+        "number": 9,
+        "club": "Manchester City",
+        "country": "Norway",
+        "price": "520",
+        "role": "collection",
+        "img": "photos/haaland_viking.jpg"
+    },
+    {
+        "id": "c5",
+        "title": "Count Suárez",
+        "vendor_code": "CC005",
+        "description": "The vampire striker, feasting on defenders' mistakes with a deadly bite",
+        "number": 9,
+        "club": "Inter Miami",
+        "country": "Uruguay",
+        "price": "450",
+        "role": "collection",
+        "img": "photos/suarez_dracula.jpg"
+    },
+    {
+        "id": "c6",
+        "title": "Elite Elf Modrić",
+        "vendor_code": "CC006",
+        "description": "Ancient elven mage, weaving magic passes with grace and wisdom of ages",
+        "number": 10,
+        "club": "Real Madrid",
+        "country": "Croatia",
+        "price": "480",
+        "role": "collection",
+        "img": "photos/modric_elf.jpg"
+    },
+    {
+        "id": "c7",
+        "title": "Sketch Ramos",
+        "vendor_code": "CC007",
+        "description": "Hand-drawn legendary defender, brought to life from an artist's sketchbook",
+        "number": 4,
+        "club": "Free Agent",
+        "country": "Spain",
+        "price": "400",
+        "role": "collection",
+        "img": "photos/ramos_sketch.jpg"
+    },
+    {
+        "id": "c8",
+        "title": "Dark Lord Mourinho",
+        "vendor_code": "CC008",
+        "description": "The Special One as a fantasy villain, mastermind of football's darkest tactics",
+        "number": 1,
+        "club": "Free Agent",
+        "country": "Portugal",
+        "price": "700",
+        "role": "collection",
+        "img": "photos/mourinho_villain.jpg"
+    }
+]
