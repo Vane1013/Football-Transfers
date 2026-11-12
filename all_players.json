@@ -168,18 +168,6 @@
         "img": "photos/cancelo.png"
     },
     {
-        "id": "25",
-        "title": "David Alaba",
-        "vendor_code": "125",
-        "description": "Versatile defender with vast experience",
-        "number": 4,
-        "club": "Real Madrid",
-        "country": "Austria",
-        "price": "30",
-        "role": "defender",
-        "img": "photos/alaba.png"
-    },
-    {
         "id": "26",
         "title": "Jude Bellingham",
         "vendor_code": "126",
@@ -382,18 +370,6 @@
         "price": "40",
         "role": "forward",
         "img": "photos/lukaku.png"
-    },
-    {
-        "id": "44",
-        "title": "Joško Gvardiol",
-        "vendor_code": "144",
-        "description": "Young Croatian defender with great potential",
-        "number": 24,
-        "club": "Manchester City",
-        "country": "Croatia",
-        "price": "75",
-        "role": "defender",
-        "img": "photos/gvardiol.png"
     },
     {
         "id": "45",
